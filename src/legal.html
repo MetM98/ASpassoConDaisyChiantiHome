@@ -1,0 +1,45 @@
+{#- Pagine legali: informativa privacy e cookie policy (testi in src/content/legal/<lingua>.json) -#}
+{% extends 'base.html' %}
+{% from 'macros.html' import icon with context %}
+{% set doc = lg[page] %}
+{% block title %}{{ doc.title }} · A spasso con Daisy · Chianti Home{% endblock %}
+{% block description %}{{ doc.meta_description }}{% endblock %}
+{% block main %}
+<main id="main" class="legal">
+  <section class="legal__hero">
+    <div class="container">
+      <p class="kicker kicker--gold">{{ lg.labels[page] }}</p>
+      <h1 class="h2 legal__title">{{ doc.title }}</h1>
+      {% if doc.intro %}<p class="lead">{{ doc.intro }}</p>{% endif %}
+      <p class="small legal__updated">{{ lg.labels.updated }}: {{ updated }}</p>
+    </div>
+  </section>
+  <div class="container legal__body">
+    {% if doc.sections %}
+    <nav class="legal__toc" aria-labelledby="toc-title">
+      <p class="legal__toc-title" id="toc-title">{{ lg.labels.on_this_page }}</p>
+      <ol>
+        {% for s in doc.sections %}<li><a href="#{{ s.id }}">{{ s.title }}</a></li>{% endfor %}
+      </ol>
+    </nav>
+    {% endif %}
+    <article class="legal__content">
+      {% for s in doc.sections %}
+      <section id="{{ s.id }}">
+        <h2 class="h3">{{ s.title }}</h2>
+        {{ s.html | safe }}
+      </section>
+      {% endfor %}
+      <div class="legal__actions">
+        {% if page == 'cookie' %}
+        <button class="btn btn--dark" type="button" data-consent-action="customize">{{ icon('check') }}<span>{{ lg.labels.cookie_prefs }}</span></button>
+        <a class="btn btn--outline" href="{{ root }}{{ lang.path }}privacy/">{{ lg.labels.privacy }}</a>
+        {% else %}
+        <a class="btn btn--outline" href="{{ root }}{{ lang.path }}cookie/">{{ lg.labels.cookie }}</a>
+        {% endif %}
+        <a class="btn btn--outline" href="{{ home }}">{{ icon('arrow-right', 'icon--left') }}<span>{{ lg.labels.back_home }}</span></a>
+      </div>
+    </article>
+  </div>
+</main>
+{% endblock %}

@@ -4,8 +4,10 @@
     pip install jinja2      (una volta sola)
     python3 build.py
 
-Legge  src/template.html + src/site.json + src/content/<lingua>.json
-e scrive index.html (IT), en/index.html, de/index.html.
+Legge  src/*.html (template) + src/site.json + src/content/<lingua>.json
+       + src/content/legal/<lingua>.json
+e scrive per ogni lingua la home e le pagine privacy/ e cookie/:
+index.html, privacy/, cookie/ (IT) · en/... · de/...
 I file generati sono HTML/CSS puri: si pubblicano così come sono (GitHub Pages).
 """
 import json
@@ -14,7 +16,7 @@ import re
 import sys
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
-from markupsafe import Markup
+from markupsafe import Markup, escape
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SRC = ROOT / "src"
@@ -76,6 +78,39 @@ def svg_inline(name):
     return Markup(text.strip())
 
 
+# Pagine generate per ogni lingua: (nome, sottocartella, template)
+PAGES = [
+    ("home", "", "home.html"),
+    ("privacy", "privacy/", "legal.html"),
+    ("cookie", "cookie/", "legal.html"),
+]
+
+
+def format_date(iso, code):
+    """Data dell'ultimo aggiornamento delle pagine legali, nel formato della lingua."""
+    y, m, d = iso.split("-")
+    return f"{d}.{m}.{y}" if code == "de" else f"{d}/{m}/{y}"
+
+
+def fill_tokens(value, tokens, todo):
+    """Sostituisce %%token%% nei testi legali con i dati di src/site.json (o un segnaposto evidenziato)."""
+    if isinstance(value, dict):
+        return {k: fill_tokens(v, tokens, todo) for k, v in value.items()}
+    if isinstance(value, list):
+        return [fill_tokens(v, tokens, todo) for v in value]
+    if not isinstance(value, str):
+        return value
+
+    def repl(match):
+        key = match.group(1)
+        if key not in tokens:
+            return match.group(0)
+        val = tokens[key]
+        return escape(val) if val else f'<mark class="todo">[{escape(todo)}]</mark>'
+
+    return re.sub(r"%%(\w+)%%", repl, value)
+
+
 def main():
     site = load(SRC / "site.json")
     photos = load_photos()
@@ -88,35 +123,55 @@ def main():
         undefined=StrictUndefined,
     )
     env.globals["svg_inline"] = svg_inline
-    template = env.get_template("template.html")
+    owner = site.get("owner", {})
 
     ok = True
     for lang in site["languages"]:
-        content_path = SRC / "content" / f"{lang['code']}.json"
-        if not content_path.exists():
-            print(f"! manca {content_path.relative_to(ROOT)}, salto {lang['code']}")
+        code = lang["code"]
+        content_path = SRC / "content" / f"{code}.json"
+        legal_path = SRC / "content" / "legal" / f"{code}.json"
+        if not content_path.exists() or not legal_path.exists():
+            print(f"! mancano i contenuti per {code}, salto")
             continue
         t = load(content_path)
-        root = "../" * lang["path"].count("/")
-        html = template.render(t=t, site=site, lang=lang, root=root, photos=photos)
+        updated = format_date(site.get("legal_updated", "2026-01-01"), code)
+        tokens = {
+            "owner_name": owner.get("name", ""),
+            "owner_address": owner.get("address", ""),
+            "owner_tax_id": owner.get("vat") or owner.get("tax_id", ""),
+            "email": site.get("email", ""),
+            "site_url": site.get("base_url", ""),
+            "updated": updated,
+        }
+        legal = load(legal_path)
+        lg = fill_tokens(legal, tokens, legal["labels"]["todo"])
 
-        used = set(re.findall(r'href="#(i-[\w-]+)"', html))
-        missing = sorted(used - sprite.keys())
-        if missing:
-            ok = False
-            print(f"! {lang['code']}: icone mancanti nello sprite: {', '.join(missing)}")
-        symbols = "".join(sprite[i] for i in sorted(used) if i in sprite)
-        sprite_html = (
-            '<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false">'
-            f"{symbols}</svg>"
-        )
-        html = html.replace("<!--ICON_SPRITE-->", sprite_html)
-        html = re.sub(r"\n\s*\n+", "\n", html)
+        for page, page_path, template_name in PAGES:
+            out_rel = lang["path"] + page_path
+            root = "../" * out_rel.count("/")
+            home = "" if page == "home" else root + lang["path"]
+            html = env.get_template(template_name).render(
+                t=t, lg=lg, site=site, lang=lang, root=root, home=home,
+                page=page, page_path=page_path, photos=photos, updated=updated,
+            )
 
-        out = ROOT / lang["path"] / "index.html"
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(html, encoding="utf-8")
-        print(f"✓ {out.relative_to(ROOT)}  ({len(html.encode('utf-8')) / 1024:.1f} KB, {len(used)} icone)")
+            used = set(re.findall(r'href="#(i-[\w-]+)"', html))
+            missing = sorted(used - sprite.keys())
+            if missing:
+                ok = False
+                print(f"! {code}/{page}: icone mancanti nello sprite: {', '.join(missing)}")
+            symbols = "".join(sprite[i] for i in sorted(used) if i in sprite)
+            sprite_html = (
+                '<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false">'
+                f"{symbols}</svg>"
+            )
+            html = html.replace("<!--ICON_SPRITE-->", sprite_html)
+            html = re.sub(r"\n\s*\n+", "\n", html)
+
+            out = ROOT / out_rel / "index.html"
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(html, encoding="utf-8")
+            print(f"✓ {out.relative_to(ROOT)}  ({len(html.encode('utf-8')) / 1024:.1f} KB, {len(used)} icone)")
 
     if not photos:
         print("· nessuna foto trovata: uso i segnaposto illustrati")

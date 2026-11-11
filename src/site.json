@@ -9,8 +9,47 @@
   "noindex": true,
   "year": 2026,
   "languages": [
-    { "code": "it", "label": "IT", "path": "" },
-    { "code": "en", "label": "EN", "path": "en/" },
-    { "code": "de", "label": "DE", "path": "de/" }
-  ]
+    {
+      "code": "it",
+      "label": "IT",
+      "path": ""
+    },
+    {
+      "code": "en",
+      "label": "EN",
+      "path": "en/"
+    },
+    {
+      "code": "de",
+      "label": "DE",
+      "path": "de/"
+    }
+  ],
+  "owner": {
+    "name": "",
+    "address": "",
+    "tax_id": "",
+    "vat": "",
+    "cin": ""
+  },
+  "legal_updated": "2026-11-11",
+  "airbnb_domain": "www.airbnb.it",
+  "airbnb": {
+    "bilocale": {
+      "listing_id": "",
+      "url": ""
+    },
+    "monolocale": {
+      "listing_id": "",
+      "url": ""
+    }
+  },
+  "consent": {
+    "version": 1,
+    "banner": "always",
+    "days": 180,
+    "categories": [
+      "embeds"
+    ]
+  }
 }

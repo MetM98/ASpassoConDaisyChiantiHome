@@ -555,6 +555,7 @@
     "kicker": "Buchung",
     "title": "Verfügbarkeit prüfen",
     "intro": "Unser Online-Kalender folgt in Kürze. Senden Sie uns bis dahin gern Ihre Anfrage – wir antworten Ihnen so schnell wie möglich.",
+    "intro_live": "Wählen Sie Ihre Reisedaten und senden Sie uns Ihre Anfrage – wir antworten Ihnen so bald wie möglich.",
     "form": {
       "checkin": "Anreise",
       "checkout": "Abreise",

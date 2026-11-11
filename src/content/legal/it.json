@@ -1,0 +1,71 @@
+{
+  "labels": {
+    "privacy": "Privacy",
+    "cookie": "Cookie",
+    "cookie_prefs": "Preferenze cookie",
+    "back_home": "Torna al sito",
+    "updated": "Ultimo aggiornamento",
+    "cin": "CIN",
+    "vat": "P. IVA",
+    "todo": "da completare",
+    "privacy_link": "Leggi l’informativa privacy",
+    "on_this_page": "In questa pagina"
+  },
+  "consent": {
+    "title": "La Vostra privacy",
+    "text": "Questo sito usa solo strumenti tecnici necessari al suo funzionamento. Con il Vostro consenso mostreremo anche contenuti di terze parti, come la scheda di Airbnb, che possono installare cookie, anche di profilazione. Potete cambiare idea in qualsiasi momento da «Preferenze cookie», in fondo alla pagina.",
+    "accept": "Accetta tutti",
+    "reject": "Rifiuta",
+    "customize": "Personalizza",
+    "save": "Salva le preferenze",
+    "close": "Chiudi e rifiuta",
+    "more": "Cookie policy",
+    "dialog_title": "Preferenze cookie",
+    "dialog_text": "Scegliete quali contenuti attivare. Gli strumenti tecnici sono sempre attivi perché servono al funzionamento del sito.",
+    "always_on": "Sempre attivi",
+    "categories": {
+      "necessary": {
+        "title": "Tecnici e necessari",
+        "text": "Ricordano le Vostre scelte sui cookie. Non tracciano la navigazione."
+      },
+      "embeds": {
+        "title": "Contenuti di terze parti",
+        "text": "Scheda di Airbnb e altri contenuti esterni. Questi servizi possono installare propri cookie, anche di profilazione."
+      },
+      "analytics": {
+        "title": "Statistiche",
+        "text": "Misurazione delle visite per migliorare il sito."
+      }
+    },
+    "placeholder_title": "Contenuto di Airbnb",
+    "placeholder_text": "Per mostrarlo dobbiamo caricare un contenuto di Airbnb, che può installare cookie di terze parti.",
+    "placeholder_button": "Mostra il contenuto",
+    "saved": "Preferenze salvate"
+  },
+  "calendar": {
+    "free": "Libero",
+    "booked": "Occupato",
+    "prev": "Mese precedente",
+    "next": "Mese successivo",
+    "updated": "Disponibilità aggiornata il",
+    "note": "Le disponibilità si sincronizzano con Airbnb ogni poche ore: Vi confermeremo sempre le date.",
+    "overlap": "Attenzione: alcune delle date scelte risultano già occupate per questo appartamento."
+  },
+  "airbnb": {
+    "title": "Prenota su Airbnb",
+    "open": "Apri su Airbnb",
+    "soon": "Presto anche su Airbnb"
+  },
+  "privacy": {
+    "title": "Informativa sulla privacy",
+    "meta_description": "",
+    "intro": "",
+    "sections": []
+  },
+  "cookie": {
+    "title": "Cookie policy",
+    "meta_description": "",
+    "intro": "",
+    "sections": []
+  }
+}

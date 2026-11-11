@@ -1,0 +1,170 @@
+{#- Struttura comune a tutte le pagine: head, header, footer, consenso cookie -#}
+{% from 'macros.html' import icon with context %}
+{% set page_url = site.base_url ~ lang.path ~ page_path %}
+{% set legal_home = root ~ lang.path %}
+<!doctype html>
+<html lang="{{ lang.code }}" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% block title %}{{ t.meta.title }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ t.meta.description }}{% endblock %}">
+{% if site.noindex %}
+<meta name="robots" content="noindex, nofollow">
+{% endif %}
+<meta name="theme-color" content="#0b0b0a">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="{{ page_url }}">
+{% for l in site.languages %}
+<link rel="alternate" hreflang="{{ l.code }}" href="{{ site.base_url }}{{ l.path }}{{ page_path }}">
+{% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.base_url }}{{ page_path }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:locale" content="{{ t.locale }}">
+<meta property="og:image" content="{{ site.base_url }}assets/img/brand/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ t.meta.og_image_alt }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ root }}assets/img/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="{{ root }}assets/img/brand/favicon-48.png">
+<link rel="apple-touch-icon" href="{{ root }}assets/img/brand/apple-touch-icon.png">
+<link rel="manifest" href="{{ root }}site.webmanifest">
+<link rel="preload" href="{{ root }}assets/fonts/cormorant-garamond.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ root }}assets/fonts/jost.woff2" as="font" type="font/woff2" crossorigin>
+{% block preload %}{% endblock %}
+<link rel="stylesheet" href="{{ root }}assets/css/style.css">
+<script>document.documentElement.classList.replace('no-js','js')</script>
+{% block head_extra %}{% endblock %}
+</head>
+<body class="page-{{ page }}">
+<!--ICON_SPRITE-->
+<a class="skip" href="#main">{{ t.ui.skip }}</a>
+
+<header class="site-header" id="top">
+  <div class="site-header__inner">
+    <a class="brand" href="{{ home if home else '#top' }}" aria-label="{{ t.hero.logo_alt }}">
+      <img class="brand__mark" src="{{ root }}assets/img/brand/mark-light.webp" width="44" height="44" alt="">
+      <span class="brand__name">A spasso con Daisy</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Menu">
+      <ul class="nav__list">
+        {% for item in t.nav %}
+        <li><a class="nav__link" href="{{ home }}{{ item.href }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+      <div class="nav__extra">
+        <ul class="langs" aria-label="{{ t.ui.lang_label }}">
+          {% for l in site.languages %}
+          <li><a href="{{ root }}{{ l.path }}{{ page_path }}" hreflang="{{ l.code }}" lang="{{ l.code }}"{% if l.code == lang.code %} aria-current="true"{% endif %}>{{ l.label }}</a></li>
+          {% endfor %}
+        </ul>
+        <a class="btn btn--gold btn--sm" href="{{ home }}#booking">{{ t.nav_cta }}</a>
+      </div>
+    </nav>
+    <button class="menu-toggle" type="button" aria-controls="nav" aria-expanded="false" data-open="{{ t.ui.menu_open }}" data-close="{{ t.ui.menu_close }}">
+      <span class="sr-only">{{ t.ui.menu_open }}</span>
+      <span class="menu-toggle__bars" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+{% block main %}{% endblock %}
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <img class="site-footer__logo" src="{{ root }}assets/img/brand/logo-light.webp" width="989" height="459" alt="A spasso con Daisy — Chianti Home" loading="lazy" decoding="async">
+    <p class="script site-footer__tagline">{{ t.footer.tagline }} <span class="sun" aria-hidden="true">{{ icon('sun') }}</span></p>
+    <nav aria-label="Footer">
+      <ul class="site-footer__nav">
+        {% for item in t.nav %}<li><a href="{{ home }}{{ item.href }}">{{ item.label }}</a></li>{% endfor %}
+      </ul>
+    </nav>
+    <ul class="langs langs--footer" aria-label="{{ t.ui.lang_label }}">
+      {% for l in site.languages %}
+      <li><a href="{{ root }}{{ l.path }}{{ page_path }}" hreflang="{{ l.code }}" lang="{{ l.code }}"{% if l.code == lang.code %} aria-current="true"{% endif %}>{{ l.label }}</a></li>
+      {% endfor %}
+    </ul>
+    <p class="site-footer__contact"><a href="mailto:{{ site.email }}">{{ site.email }}</a> · Barberino Tavarnelle (FI) · Toscana</p>
+    {% if site.owner.cin or site.owner.vat %}
+    <p class="site-footer__ids">
+      {% if site.owner.cin %}<span>{{ lg.labels.cin }}: {{ site.owner.cin }}</span>{% endif %}
+      {% if site.owner.vat %}<span>{{ lg.labels.vat }}: {{ site.owner.vat }}</span>{% endif %}
+    </p>
+    {% endif %}
+    <ul class="site-footer__legal">
+      <li><a href="{{ legal_home }}privacy/"{% if page == 'privacy' %} aria-current="page"{% endif %}>{{ lg.labels.privacy }}</a></li>
+      <li><a href="{{ legal_home }}cookie/"{% if page == 'cookie' %} aria-current="page"{% endif %}>{{ lg.labels.cookie }}</a></li>
+      <li><button class="link-button" type="button" data-consent-action="customize">{{ lg.labels.cookie_prefs }}</button></li>
+    </ul>
+    <div class="site-footer__meta">
+      <p>© {{ site.year }} A spasso con Daisy · Chianti Home. {{ t.footer.rights }}</p>
+      <p>
+        {{ t.footer.illustrations_credit }}.
+        {% set credited = photos.values() | list %}
+        {% if credited %}
+        {{ t.footer.photos_credit }}:
+        {% for p in credited %}<a href="{{ p.unsplash_page_url }}" target="_blank" rel="noopener">{{ p.photographer }}</a>{{ ', ' if not loop.last else '.' }}{% endfor %}
+        {% endif %}
+      </p>
+      {% if site.noindex %}<p class="site-footer__preview">{{ t.ui.preview_note }}</p>{% endif %}
+      <a class="site-footer__top" href="#top">{{ icon('arrow-down', 'icon--up') }}<span>{{ t.ui.back_top }}</span></a>
+    </div>
+  </div>
+</footer>
+
+{# ───────── Consenso cookie (linee guida Garante privacy, 10 giugno 2021) ───────── #}
+{% set c = lg.consent %}
+<section class="consent" id="consent" aria-labelledby="consent-title" hidden>
+  <button class="consent__close" type="button" data-consent-action="reject" aria-label="{{ c.close }}">{{ icon('close') }}</button>
+  <h2 class="consent__title" id="consent-title">{{ c.title }}</h2>
+  <p class="consent__text">{{ c.text }} <a href="{{ legal_home }}cookie/">{{ c.more }}</a></p>
+  <div class="consent__actions">
+    <button class="btn btn--choice btn--sm" type="button" data-consent-action="reject">{{ c.reject }}</button>
+    <button class="btn btn--choice btn--sm" type="button" data-consent-action="accept">{{ c.accept }}</button>
+    <button class="link-button consent__more" type="button" data-consent-action="customize">{{ c.customize }}</button>
+  </div>
+</section>
+<dialog class="consent-dialog" id="consent-dialog" aria-labelledby="consent-dialog-title">
+  <div class="consent-dialog__inner">
+    <div class="consent-dialog__head">
+      <h2 class="h3" id="consent-dialog-title">{{ c.dialog_title }}</h2>
+      <button class="consent__close consent__close--dialog" type="button" data-consent-action="dismiss" aria-label="{{ t.ui.menu_close }}">{{ icon('close') }}</button>
+    </div>
+    <p class="small">{{ c.dialog_text }} <a href="{{ legal_home }}cookie/">{{ c.more }}</a></p>
+    <ul class="consent-cats">
+      <li class="consent-cat">
+        <div><h3 class="consent-cat__title">{{ c.categories.necessary.title }}</h3><p>{{ c.categories.necessary.text }}</p></div>
+        <span class="badge badge--outline">{{ c.always_on }}</span>
+      </li>
+      {% for cat in site.consent.categories %}
+      <li class="consent-cat">
+        <label class="switch">
+          <span><span class="consent-cat__title">{{ c.categories[cat].title }}</span><span class="consent-cat__text">{{ c.categories[cat].text }}</span></span>
+          <input type="checkbox" role="switch" name="{{ cat }}" data-consent-category="{{ cat }}">
+          <span class="switch__track" aria-hidden="true"></span>
+        </label>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="consent-dialog__actions">
+      <button class="btn btn--choice btn--sm" type="button" data-consent-action="reject">{{ c.reject }}</button>
+      <button class="btn btn--choice btn--sm" type="button" data-consent-action="save">{{ c.save }}</button>
+      <button class="btn btn--choice btn--sm" type="button" data-consent-action="accept">{{ c.accept }}</button>
+    </div>
+    <p class="consent-dialog__saved small" role="status" aria-live="polite"></p>
+  </div>
+</dialog>
+<script type="application/json" id="consent-config">{{ {
+  'version': site.consent.version, 'banner': site.consent.banner, 'categories': site.consent.categories,
+  'days': site.consent.days, 'saved': c.saved, 'lang': lang.code
+} | tojson }}</script>
+
+<script src="{{ root }}assets/js/consent.js" defer></script>
+<script src="{{ root }}assets/js/main.js" defer></script>
+</body>
+</html>

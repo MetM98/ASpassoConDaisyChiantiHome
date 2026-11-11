@@ -555,6 +555,7 @@
     "kicker": "Book",
     "title": "Check availability",
     "intro": "Our online calendar is coming soon. In the meantime, send us your request and we will reply as soon as we can.",
+    "intro_live": "Choose your dates and send us your request: we will reply as soon as possible.",
     "form": {
       "checkin": "Arrival",
       "checkout": "Departure",
