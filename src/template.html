@@ -225,7 +225,7 @@
       <div class="mosaic reveal">
         <div class="mosaic__item mosaic__item--main">{{ photo('hills', '(min-width: 900px) 66vw, 100vw', ph_icon='hills') }}</div>
         <div class="mosaic__item">{{ photo('cypress-road', '(min-width: 900px) 33vw, 50vw', ph_icon='cypress') }}</div>
-        <div class="mosaic__item">{{ photo('borgo', '(min-width: 900px) 33vw, 50vw', ph_icon='castle') }}</div>
+        <div class="mosaic__item">{{ photo('florence', '(min-width: 900px) 33vw, 50vw', ph_icon='castle') }}</div>
       </div>
       <ul class="places">
         {% for pl in t.territory.places %}
@@ -236,11 +236,16 @@
         </li>
         {% endfor %}
       </ul>
-      <figure class="quote reveal">
-        <blockquote><p>{{ t.territory.quote }}</p></blockquote>
-        <figcaption class="script">{{ t.territory.signature }} <span class="sun" aria-hidden="true">{{ icon('sun') }}</span></figcaption>
-      </figure>
     </div>
+  </section>
+
+  {# ───────────────────────── FASCIA FOTOGRAFICA ───────────────────────── #}
+  <section class="band" aria-label="{{ t.territory.signature }}">
+    <div class="band__media">{{ photo('hills-golden', '100vw', ph_icon='hills') }}</div>
+    <figure class="band__quote reveal">
+      <blockquote><p>{{ t.territory.quote }}</p></blockquote>
+      <figcaption class="script">{{ t.territory.signature }} <span class="sun" aria-hidden="true">{{ icon('sun') }}</span></figcaption>
+    </figure>
   </section>
 
   {# ───────────────────────── AL VOSTRO SERVIZIO ───────────────────────── #}
@@ -334,7 +339,7 @@
         <p class="lead">{{ t.experiences.intro }}</p>
       </header>
       {% set strip = [] %}
-      {% for s in ['wine', 'oil', 'bike', 'pool'] %}{% if photos.get(s) and strip|length < 3 %}{% set _ = strip.append(s) %}{% endif %}{% endfor %}
+      {% for s in ['wine', 'bike', 'pool', 'dog-2'] %}{% if photos.get(s) and strip|length < 3 %}{% set _ = strip.append(s) %}{% endif %}{% endfor %}
       {% if strip %}
       <div class="strip reveal">
         {% for s in strip %}
