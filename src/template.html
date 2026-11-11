@@ -195,7 +195,7 @@
     {{ edge() }}
     <div class="container dogs__grid">
       <div class="dogs__art reveal">
-        <img class="dogs__illustration" src="{{ root }}assets/img/illustrations/daisy-path.svg" width="800" height="520" alt="{{ t.dogs.illustration_alt }}" loading="lazy" decoding="async">
+        <div class="dogs__illustration" role="img" aria-label="{{ t.dogs.illustration_alt }}">{{ svg_inline('daisy-path.svg') }}</div>
         {% if photos.get('dog') %}
         <div class="dogs__photo">{{ photo('dog', '(min-width: 900px) 220px, 40vw', square=True) }}</div>
         {% endif %}
@@ -372,7 +372,7 @@
   <section class="section section--light location" id="location" aria-labelledby="location-title">
     <div class="container location__grid">
       <figure class="location__map reveal">
-        <img src="{{ root }}assets/img/illustrations/map-chianti.svg" width="600" height="720" alt="{{ t.location.map_alt }}" loading="lazy" decoding="async">
+        <div class="location__svg" role="img" aria-label="{{ t.location.map_alt }}">{{ svg_inline('map-chianti.svg') }}</div>
       </figure>
       <div class="location__text reveal">
         <p class="kicker">{{ t.location.kicker }}</p>

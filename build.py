@@ -62,6 +62,17 @@ def svg_inline(name):
     text = re.sub(r"<\?xml[^>]*\?>", "", text)
     text = re.sub(r"<!DOCTYPE[^>]*>", "", text)
     text = re.sub(r"<!--.*?-->", "", text, flags=re.S)
+    # Prefisso sugli id per evitare collisioni tra più SVG nella stessa pagina
+    prefix = re.sub(r"\W", "", pathlib.Path(name).stem) + "-"
+    ids = set(re.findall(r'\bid="([^"]+)"', text))
+    for i in sorted(ids, key=len, reverse=True):
+        text = re.sub(rf'\bid="{re.escape(i)}"', f'id="{prefix}{i}"', text)
+        text = re.sub(rf'url\(#{re.escape(i)}\)', f"url(#{prefix}{i})", text)
+        text = re.sub(rf'href="#{re.escape(i)}"', f'href="#{prefix}{i}"', text)
+    # l'SVG decorativo viene descritto dal contenitore (role="img" + aria-label)
+    text = re.sub(r"<title>.*?</title>", "", text, flags=re.S)
+    text = re.sub(r'\s(role|aria-labelledby)="[^"]*"', "", text, count=2)
+    text = text.replace("<svg ", '<svg aria-hidden="true" focusable="false" ', 1)
     return Markup(text.strip())
 
 
