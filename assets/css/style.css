@@ -422,7 +422,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .band { position: relative; isolation: isolate; min-height: clamp(420px, 62vw, 760px); display: grid; place-items: center; padding: 96px var(--gutter) clamp(120px, 14vw, 200px); color: var(--cream); text-align: center; overflow: hidden; }
 .band__media { position: absolute; inset: 0; z-index: -1; }
 .band__media img, .band__media .ph { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
-.band::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(11, 11, 10, .15) 0%, rgba(11, 11, 10, .35) 45%, rgba(11, 11, 10, .72) 100%); }
+.band::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(11, 11, 10, .2) 0%, rgba(11, 11, 10, .42) 50%, rgba(11, 11, 10, .3) 100%); }
 .band__quote { max-width: 900px; }
 .band__quote blockquote p {
   font-family: var(--serif); font-style: italic; font-weight: 400;
@@ -463,7 +463,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   border: 1px solid var(--gold-soft); outline: 1px solid var(--gold-soft); outline-offset: 10px; color: var(--gold);
 }
 .story__frame .icon { width: 64px; height: 64px; }
-.story__num { display: block; font-family: var(--serif); font-size: 1rem; letter-spacing: .2em; color: var(--gold); margin-bottom: .8rem; }
+.story__num { font-variant-numeric: lining-nums; display: block; font-family: var(--serif); font-size: 1rem; letter-spacing: .2em; color: var(--gold); margin-bottom: .8rem; }
 .story__body p { color: var(--muted-dark); max-width: 52ch; }
 @media (min-width: 900px) {
   .story { grid-template-columns: 1.1fr 1fr; }
@@ -482,7 +482,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   margin-top: clamp(36px, 5vw, 56px); padding: clamp(22px, 3vw, 32px) clamp(22px, 3.5vw, 40px);
   background: var(--olive); color: var(--ivory); border-radius: var(--radius-lg);
 }
-.extras li { display: flex; gap: 14px; align-items: center; font-family: var(--serif); font-size: clamp(1.15rem, 1.05rem + .4vw, 1.35rem); line-height: 1.3; }
+.extras li { font-variant-numeric: lining-nums; display: flex; gap: 14px; align-items: center; font-family: var(--serif); font-size: clamp(1.15rem, 1.05rem + .4vw, 1.35rem); line-height: 1.3; }
 .extras .icon { width: 28px; height: 28px; color: var(--sage); }
 
 /* ---------- Smartworking ---------- */
@@ -533,7 +533,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .location__map img { width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow); }
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 18px; margin: 2rem 0 .4rem; }
 .facts div { border-top: 1px solid var(--stone); padding-top: 12px; }
-.facts dt { font-family: var(--serif); font-size: clamp(2rem, 1.7rem + 1vw, 2.6rem); font-weight: 500; line-height: 1; color: var(--olive); }
+.facts dt { font-variant-numeric: lining-nums; font-family: var(--serif); font-size: clamp(2rem, 1.7rem + 1vw, 2.6rem); font-weight: 500; line-height: 1; color: var(--olive); }
 .facts dd { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); margin-top: 6px; }
 .location .small { margin: 1.4rem 0; }
 
