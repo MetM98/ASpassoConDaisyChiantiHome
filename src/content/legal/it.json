@@ -58,14 +58,106 @@
   },
   "privacy": {
     "title": "Informativa sulla privacy",
-    "meta_description": "",
-    "intro": "",
-    "sections": []
+    "meta_description": "Informativa privacy di A spasso con Daisy · Chianti Home: quali dati trattiamo, perché, per quanto tempo e come esercitare i Vostri diritti.",
+    "intro": "Questa informativa, resa ai sensi dell’art. 13 del Regolamento (UE) 2016/679 («GDPR»), spiega come vengono trattati i dati personali di chi visita il sito, invia una richiesta o soggiorna negli appartamenti di A spasso con Daisy · Chianti Home. In sintesi: il sito non installa cookie propri e non usa strumenti statistici, e i dati inviati con una richiesta servono solo a rispondere e a gestire la prenotazione.",
+    "sections": [
+      {
+        "id": "titolare",
+        "title": "Titolare del trattamento",
+        "html": "<p>Il titolare del trattamento è <strong>%%owner_name%%</strong>, %%owner_address%%, C.F./P. IVA %%owner_tax_id%%, che gestisce gli appartamenti Il Bilocale e Il Monolocale a Barberino Tavarnelle (FI) e il sito %%site_url%%.</p><p>Per domande su questa informativa o per esercitare i Vostri diritti potete scrivere a <a href=\"mailto:%%email%%\">%%email%%</a>.</p>"
+      },
+      {
+        "id": "dati-trattati",
+        "title": "Quali dati trattiamo",
+        "html": "<p><strong>Navigazione sul sito.</strong> Il sito è statico ed è ospitato su GitHub Pages, servizio di GitHub, Inc. (Stati Uniti, gruppo Microsoft). Per mostrare le pagine, GitHub riceve l’indirizzo IP di chi visita il sito e lo registra per finalità di sicurezza. Il sito non installa cookie, non usa strumenti statistici e non carica risorse di terze parti: caratteri e immagini sono ospitati sul sito stesso.</p><p><strong>Preferenze sui cookie.</strong> Nel browser viene salvato un solo dato tecnico, <em>daisy-consent</em>, con le Vostre scelte sui cookie e la data in cui le avete espresse. Resta sul Vostro dispositivo e non viene trasmesso al titolare.</p><p><strong>Contenuti di terze parti.</strong> Solo se lo acconsentite, il sito carica la scheda di Airbnb di ciascun appartamento: in quel caso Airbnb riceve il Vostro indirizzo IP e può installare propri cookie, anche di profilazione. Il calendario delle disponibilità, invece, mostra soltanto le date occupate, sincronizzate dal calendario di Airbnb tramite un processo automatico su GitHub: non contiene dati degli ospiti e non installa cookie. Il link «Apri in Google Maps» non carica nulla da Google finché non viene cliccato.</p><p><strong>Richieste di prenotazione.</strong> Il modulo della pagina non invia né memorizza alcun dato sul sito: apre la Vostra app di WhatsApp o di posta elettronica con un messaggio già compilato, che siete Voi a decidere se inviare. Se lo inviate, il titolare riceve i dati che contiene: nome, date di arrivo e di partenza, numero di ospiti, appartamento e tipo di soggiorno, l’eventuale presenza di un cane (con nome e taglia) e il messaggio libero, oltre al numero di telefono o all’indirizzo email da cui scrivete.</p><p><strong>Soggiorno.</strong> Per chi soggiorna, il titolare tratta inoltre i dati necessari a gestire la prenotazione e gli obblighi di legge: i dati anagrafici e del documento d’identità degli ospiti, da comunicare alla Questura tramite il servizio Alloggiati Web; dove previsto, i dati richiesti per l’imposta di soggiorno e per le statistiche sul movimento turistico; i dati fiscali e contabili relativi al pagamento. Se prenotate tramite Airbnb, il titolare riceve da Airbnb i dati necessari a gestire la prenotazione; Airbnb li tratta anche come titolare autonomo, secondo la propria informativa.</p>"
+      },
+      {
+        "id": "finalita-basi-giuridiche",
+        "title": "Finalità e basi giuridiche",
+        "html": "<ul><li><strong>Sicurezza del sito</strong> (indirizzi IP registrati da GitHub): legittimo interesse a proteggere il sito da abusi e attacchi informatici (art. 6, par. 1, lett. f GDPR).</li><li><strong>Memorizzazione delle scelte sui cookie</strong>: rispetto degli obblighi di legge in materia di consenso (art. 6, par. 1, lett. c GDPR); trattandosi di uno strumento tecnico, non richiede il consenso (art. 122 del d.lgs. 196/2003, «Codice privacy»).</li><li><strong>Visualizzazione della scheda di Airbnb</strong>: Vostro consenso (art. 6, par. 1, lett. a GDPR e art. 122 del Codice privacy), revocabile in qualsiasi momento.</li><li><strong>Risposta alle richieste e gestione della prenotazione e del soggiorno</strong>: esecuzione di misure precontrattuali adottate su Vostra richiesta e del contratto (art. 6, par. 1, lett. b GDPR).</li><li><strong>Obblighi di legge</strong>, come la comunicazione degli ospiti alla Questura (art. 109 del Testo unico delle leggi di pubblica sicurezza, TULPS), l’imposta di soggiorno e le statistiche turistiche dove previste, gli adempimenti fiscali e contabili: obbligo legale (art. 6, par. 1, lett. c GDPR).</li></ul><p>Il titolare non svolge attività di profilazione e non prende decisioni basate unicamente su trattamenti automatizzati.</p>"
+      },
+      {
+        "id": "conferimento",
+        "title": "Il conferimento dei dati è obbligatorio?",
+        "html": "<p>Fornire i dati nella richiesta di prenotazione è facoltativo, ma senza di essi non è possibile rispondere né organizzare il soggiorno. I dati d’identità richiesti all’arrivo sono invece obbligatori per legge: in loro mancanza non è possibile dare alloggio.</p>"
+      },
+      {
+        "id": "conservazione",
+        "title": "Per quanto tempo conserviamo i dati",
+        "html": "<ul><li><strong>Richieste di prenotazione</strong>: per il tempo necessario a gestire la richiesta e, se non segue una prenotazione, non oltre 12 mesi.</li><li><strong>Prenotazione e soggiorno</strong>: per la durata del rapporto; i documenti fiscali e contabili per 10 anni, come previsto dalla legge.</li><li><strong>Adempimenti verso le autorità</strong> (Alloggiati Web, imposta di soggiorno, statistiche): per il tempo previsto dalla normativa applicabile.</li><li><strong>Preferenze sui cookie</strong> (<em>daisy-consent</em>): 6 mesi, dopo i quali la scelta viene richiesta di nuovo.</li><li><strong>Indirizzi IP registrati da GitHub</strong>: per i tempi indicati nell’<a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" target=\"_blank\" rel=\"noopener\">informativa privacy di GitHub</a>.</li></ul><p>Trascorsi questi periodi, i dati vengono cancellati o resi anonimi.</p>"
+      },
+      {
+        "id": "destinatari",
+        "title": "A chi possono essere comunicati i dati",
+        "html": "<p>I dati non vengono diffusi. Possono riceverli, solo nella misura necessaria:</p><ul><li>i fornitori di servizi tecnici: GitHub (hosting del sito), il fornitore di posta elettronica del titolare e WhatsApp (gruppo Meta), se scegliete di scrivere con questa app;</li><li>i professionisti che assistono il titolare, ad esempio il commercialista;</li><li>le autorità pubbliche, quando lo prevede la legge: ad esempio la Questura tramite Alloggiati Web, il Comune per l’imposta di soggiorno, dove prevista, e l’amministrazione finanziaria.</li></ul><p>Airbnb, per la scheda dell’annuncio e per le prenotazioni effettuate sulla sua piattaforma, e Google, se aprite il link a Google Maps, trattano i dati come titolari autonomi, secondo le rispettive informative: <a href=\"https://www.airbnb.it/help/article/2855\" target=\"_blank\" rel=\"noopener\">privacy policy di Airbnb</a> e <a href=\"https://policies.google.com/privacy?hl=it\" target=\"_blank\" rel=\"noopener\">informativa privacy di Google</a>.</p>"
+      },
+      {
+        "id": "trasferimenti-extra-ue",
+        "title": "Trasferimenti fuori dall’Unione europea",
+        "html": "<p>Alcuni fornitori, come GitHub (gruppo Microsoft) e WhatsApp (gruppo Meta), fanno parte di gruppi con sede negli Stati Uniti e possono trattare i dati anche fuori dall’Unione europea. In questi casi il trasferimento si basa sull’EU-US Data Privacy Framework, riconosciuto adeguato dalla Commissione europea con decisione del 10 luglio 2023 (art. 45 GDPR), oppure sulle clausole contrattuali tipo approvate dalla Commissione (art. 46 GDPR). Potete chiedere al titolare maggiori informazioni sulle garanzie adottate.</p>"
+      },
+      {
+        "id": "diritti",
+        "title": "I Vostri diritti",
+        "html": "<p>Ai sensi degli articoli da 15 a 22 del GDPR, potete chiedere al titolare:</p><ul><li>l’<strong>accesso</strong> ai Vostri dati e una copia degli stessi;</li><li>la <strong>rettifica</strong> dei dati inesatti o incompleti;</li><li>la <strong>cancellazione</strong> dei dati, salvo quelli che devono essere conservati per legge;</li><li>la <strong>limitazione</strong> del trattamento;</li><li>la <strong>portabilità</strong> dei dati che avete fornito, in un formato strutturato e di uso comune;</li><li>di <strong>opporVi</strong> ai trattamenti basati sul legittimo interesse.</li></ul><p>Potete inoltre <strong>revocare il consenso</strong> ai contenuti di terze parti in qualsiasi momento, dal link «Preferenze cookie» in fondo a ogni pagina. La revoca non pregiudica la liceità del trattamento svolto in precedenza.</p><p>Per esercitare i Vostri diritti basta scrivere a <a href=\"mailto:%%email%%\">%%email%%</a>: riceverete risposta senza ingiustificato ritardo e, di norma, entro un mese.</p>"
+      },
+      {
+        "id": "reclamo",
+        "title": "Reclamo all’autorità di controllo",
+        "html": "<p>Se ritenete che il trattamento dei Vostri dati violi il GDPR, potete proporre reclamo al Garante per la protezione dei dati personali (<a href=\"https://www.garanteprivacy.it\" target=\"_blank\" rel=\"noopener\">www.garanteprivacy.it</a>). Se vivete o lavorate in un altro Paese dell’Unione europea, potete rivolgerVi anche all’<a href=\"https://www.edpb.europa.eu/about-edpb/about-edpb/members_en\" target=\"_blank\" rel=\"noopener\">autorità di controllo di quel Paese</a>.</p>"
+      },
+      {
+        "id": "modifiche",
+        "title": "Modifiche a questa informativa",
+        "html": "<p>Questa informativa può essere aggiornata, ad esempio se cambiano i servizi usati dal sito o la normativa. La versione valida è sempre quella pubblicata su questa pagina. Ultimo aggiornamento: %%updated%%.</p>"
+      }
+    ]
   },
   "cookie": {
     "title": "Cookie policy",
-    "meta_description": "",
-    "intro": "",
-    "sections": []
+    "meta_description": "Cookie policy di A spasso con Daisy · Chianti Home: il sito non usa cookie propri e la scheda di Airbnb si carica solo con il Vostro consenso.",
+    "intro": "Questa pagina spiega quali cookie e strumenti simili sono usati sul sito di A spasso con Daisy · Chianti Home e come gestire le Vostre preferenze. In breve: il sito non installa cookie propri, e i contenuti di Airbnb vengono caricati solo se lo scegliete Voi.",
+    "sections": [
+      {
+        "id": "cosa-sono",
+        "title": "Cosa sono i cookie",
+        "html": "<p>I cookie sono piccoli file di testo che i siti salvano nel browser e rileggono alle visite successive. Altri strumenti, come il <em>localStorage</em> del browser, permettono di conservare informazioni in modo simile e sono soggetti alle stesse regole.</p><p>Gli strumenti <strong>tecnici</strong>, necessari al funzionamento del sito, non richiedono il consenso. Tutti gli altri, compresi quelli di profilazione e quelli installati da terze parti, possono essere usati solo con il consenso dell’utente, come previsto dall’art. 122 del Codice privacy e dalle Linee guida del Garante del 10 giugno 2021.</p>"
+      },
+      {
+        "id": "strumenti-usati",
+        "title": "Cookie e strumenti usati da questo sito",
+        "html": "<p>Il sito non installa cookie propri e non usa strumenti statistici. Salva nel browser un solo dato tecnico; i contenuti di terze parti vengono caricati solo con il Vostro consenso.</p><table><thead><tr><th>Nome</th><th>Fornitore</th><th>Finalità</th><th>Durata</th><th>Categoria</th></tr></thead><tbody><tr><td><em>daisy-consent</em> (localStorage)</td><td>Questo sito</td><td>Ricorda le Vostre scelte sui cookie e la data in cui le avete espresse. Non traccia la navigazione.</td><td>6 mesi</td><td>Tecnici e necessari (sempre attivi)</td></tr><tr><td>Cookie di Airbnb</td><td>Airbnb (terza parte)</td><td>Mostrano la scheda dell’annuncio di ciascun appartamento; Airbnb può usarli anche per finalità proprie, compresa la profilazione.</td><td>Stabilita da Airbnb (vedi la sua cookie policy)</td><td>Contenuti di terze parti (solo con consenso)</td></tr><tr><td>Nessuno</td><td>—</td><td>Al momento il sito non usa strumenti statistici.</td><td>—</td><td>Statistiche</td></tr></tbody></table><p>Il calendario delle disponibilità mostra solo le date occupate e non installa cookie. Come indicato nell’informativa privacy, GitHub, che ospita il sito, registra gli indirizzi IP dei visitatori per finalità di sicurezza.</p>"
+      },
+      {
+        "id": "contenuti-terze-parti",
+        "title": "Contenuti di terze parti: Airbnb",
+        "html": "<p>Per ciascun appartamento (Il Bilocale e Il Monolocale) il sito può mostrare il widget di Airbnb con il relativo annuncio. Il widget viene caricato dai server di Airbnb solo dopo il Vostro consenso alla categoria «Contenuti di terze parti». Fino ad allora, al suo posto compare un riquadro con il pulsante «Mostra il contenuto»: premendolo, acconsentite al caricamento del contenuto di Airbnb.</p><p>Quando il widget viene caricato, Airbnb riceve il Vostro indirizzo IP e alcuni dati tecnici del dispositivo e può installare propri cookie, anche di profilazione. Airbnb agisce come titolare autonomo: il titolare di questo sito non controlla questi cookie e non ha accesso ai dati che raccolgono. Per maggiori informazioni si possono consultare la <a href=\"https://www.airbnb.it/help/article/2855\" target=\"_blank\" rel=\"noopener\">privacy policy</a> e la <a href=\"https://www.airbnb.it/terms/cookie_policy\" target=\"_blank\" rel=\"noopener\">cookie policy</a> di Airbnb.</p>"
+      },
+      {
+        "id": "link-esterni",
+        "title": "Link esterni: Google Maps, WhatsApp ed email",
+        "html": "<p>Il pulsante «Apri in Google Maps» è un semplice link: finché non lo cliccate, dal sito non viene caricato nulla da Google. Una volta aperto Google Maps, si applicano l’<a href=\"https://policies.google.com/privacy?hl=it\" target=\"_blank\" rel=\"noopener\">informativa privacy</a> e le impostazioni sui cookie di Google.</p><p>Allo stesso modo, i pulsanti di invio del modulo di prenotazione aprono WhatsApp o la Vostra app di posta elettronica, senza installare cookie sul sito.</p>"
+      },
+      {
+        "id": "gestire-preferenze",
+        "title": "Come gestire le preferenze",
+        "html": "<p>Alla prima visita compare un banner con tre pulsanti: <strong>«Accetta tutti»</strong>, <strong>«Rifiuta»</strong> e <strong>«Personalizza»</strong>, che permette di scegliere le singole categorie. Chiudendo il banner con la X si rifiutano tutti gli strumenti non necessari: restano attivi solo quelli tecnici.</p><p>Nessuna casella è preselezionata e lo scorrimento della pagina non vale come consenso. Se rifiutate, il sito funziona normalmente: semplicemente, la scheda di Airbnb non viene mostrata.</p><p>La scelta viene ricordata per 6 mesi, dopo i quali Vi verrà chiesta di nuovo. Potete modificarla o revocare il consenso in qualsiasi momento dal link <strong>«Preferenze cookie»</strong> in fondo a ogni pagina.</p>"
+      },
+      {
+        "id": "cancellare-cookie",
+        "title": "Come cancellare cookie e dati dei siti dal browser",
+        "html": "<p>Potete cancellare in qualsiasi momento i cookie e i dati salvati dai siti, compresa la scelta memorizzata da questo sito, dalle impostazioni del browser. In tal caso, alla visita successiva il banner comparirà di nuovo. Ecco dove trovare l’opzione nei browser più diffusi (i nomi delle voci possono variare leggermente a seconda della versione):</p><ul><li><strong>Chrome</strong>: Impostazioni › Privacy e sicurezza › Elimina dati di navigazione (<a href=\"https://support.google.com/chrome/answer/95647?hl=it\" target=\"_blank\" rel=\"noopener\">guida di Google</a>)</li><li><strong>Firefox</strong>: Impostazioni › Privacy e sicurezza › Cookie e dati dei siti web › Elimina dati (<a href=\"https://support.mozilla.org/kb/clear-cookies-and-site-data-firefox\" target=\"_blank\" rel=\"noopener\">guida di Mozilla</a>)</li><li><strong>Safari</strong>: su Mac, Safari › Impostazioni › Privacy › Gestisci dati siti web; su iPhone e iPad, Impostazioni › Safari › Cancella cronologia e dati dei siti web (<a href=\"https://support.apple.com/it-it/guide/safari/sfri11471/mac\" target=\"_blank\" rel=\"noopener\">guida di Apple</a>)</li><li><strong>Edge</strong>: Impostazioni › Privacy, ricerca e servizi › Cancella dati delle esplorazioni (<a href=\"https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09\" target=\"_blank\" rel=\"noopener\">guida di Microsoft</a>)</li></ul><p>Dalle stesse impostazioni potete anche bloccare i cookie di terze parti.</p>"
+      },
+      {
+        "id": "contatti",
+        "title": "Titolare e contatti",
+        "html": "<p>Il titolare del trattamento è <strong>%%owner_name%%</strong>, %%owner_address%%. Per domande su cookie e preferenze potete scrivere a <a href=\"mailto:%%email%%\">%%email%%</a>. Tutte le informazioni sul trattamento dei dati personali si trovano nell’informativa privacy.</p>"
+      },
+      {
+        "id": "aggiornamenti",
+        "title": "Aggiornamenti",
+        "html": "<p>Al momento il sito non usa strumenti statistici: la categoria «Statistiche» è presente nelle preferenze solo in vista di un eventuale uso futuro e oggi non attiva alcuno strumento. Se in futuro verranno introdotti strumenti statistici o altri servizi di terze parti, questa cookie policy sarà aggiornata e, se necessario, Vi verrà chiesto nuovamente il consenso.</p><p>Ultimo aggiornamento: %%updated%%.</p>"
+      }
+    ]
   }
 }

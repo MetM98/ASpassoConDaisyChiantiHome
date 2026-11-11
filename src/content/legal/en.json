@@ -1,0 +1,163 @@
+{
+  "labels": {
+    "privacy": "Privacy",
+    "cookie": "Cookies",
+    "cookie_prefs": "Cookie preferences",
+    "back_home": "Back to the site",
+    "updated": "Last updated",
+    "cin": "CIN",
+    "vat": "VAT no.",
+    "todo": "to be completed",
+    "privacy_link": "Read the privacy notice",
+    "on_this_page": "On this page"
+  },
+  "consent": {
+    "title": "Your privacy",
+    "text": "This site only uses the technical tools it needs to work. With your consent, we will also show third-party content, such as the Airbnb listing, which may set cookies, including profiling cookies. You can change your mind at any time via ‘Cookie preferences’ at the bottom of the page.",
+    "accept": "Accept all",
+    "reject": "Reject",
+    "customize": "Customise",
+    "save": "Save preferences",
+    "close": "Close and reject",
+    "more": "Cookie policy",
+    "dialog_title": "Cookie preferences",
+    "dialog_text": "Choose which content to enable. Technical tools are always on, as the site needs them to work.",
+    "always_on": "Always on",
+    "categories": {
+      "necessary": {
+        "title": "Technical and necessary",
+        "text": "They remember your cookie choices. They do not track your browsing."
+      },
+      "embeds": {
+        "title": "Third-party content",
+        "text": "The Airbnb listing and other external content. These services may set their own cookies, including profiling cookies."
+      },
+      "analytics": {
+        "title": "Statistics",
+        "text": "Measuring visits to improve the site."
+      }
+    },
+    "placeholder_title": "Airbnb content",
+    "placeholder_text": "To show this, we need to load content from Airbnb, which may set third-party cookies.",
+    "placeholder_button": "Show content",
+    "saved": "Preferences saved"
+  },
+  "calendar": {
+    "free": "Available",
+    "booked": "Booked",
+    "prev": "Previous month",
+    "next": "Next month",
+    "updated": "Availability updated on",
+    "note": "Availability syncs with Airbnb every few hours: we will always confirm your dates.",
+    "overlap": "Please note: some of the dates you have chosen are already booked for this apartment."
+  },
+  "airbnb": {
+    "title": "Book on Airbnb",
+    "open": "View on Airbnb",
+    "soon": "Coming soon to Airbnb"
+  },
+  "privacy": {
+    "title": "Privacy notice",
+    "meta_description": "Privacy notice for A spasso con Daisy · Chianti Home: what personal data we process, why, for how long and how to exercise your rights.",
+    "intro": "This notice, provided under Article 13 of Regulation (EU) 2016/679 (the ‘GDPR’), explains how personal data are processed when you visit this website, send an enquiry or stay at the A spasso con Daisy · Chianti Home apartments. In short: the site sets no cookies of its own and uses no analytics, and the data you send with an enquiry are used only to reply and to manage your booking.",
+    "sections": [
+      {
+        "id": "titolare",
+        "title": "Data controller",
+        "html": "<p>The data controller is <strong>%%owner_name%%</strong>, %%owner_address%%, tax code/VAT no. %%owner_tax_id%%, who runs the Il Bilocale and Il Monolocale apartments in Barberino Tavarnelle (Florence) and the website %%site_url%%.</p><p>If you have any questions about this notice or wish to exercise your rights, please write to <a href=\"mailto:%%email%%\">%%email%%</a>.</p>"
+      },
+      {
+        "id": "dati-trattati",
+        "title": "What data we process",
+        "html": "<p><strong>Browsing the site.</strong> This is a static website hosted on GitHub Pages, a service of GitHub, Inc. (USA, part of Microsoft). To deliver the pages, GitHub receives each visitor’s IP address and logs it for security purposes. The site sets no cookies, uses no analytics and loads no third-party resources: fonts and images are hosted on the site itself.</p><p><strong>Cookie preferences.</strong> A single technical item, <em>daisy-consent</em>, is stored in your browser, containing your cookie choices and the date you made them. It stays on your device and is not sent to the controller.</p><p><strong>Third-party content.</strong> Only with your consent does the site load the Airbnb listing for each apartment: in that case, Airbnb receives your IP address and may set its own cookies, including profiling cookies. The availability calendar, by contrast, only shows booked dates, synchronised from the Airbnb calendar by an automatic process on GitHub: it contains no guest data and sets no cookies. The ‘Open in Google Maps’ link loads nothing from Google unless you click it.</p><p><strong>Booking enquiries.</strong> The form on the page does not send or store any data on the site: it opens your own WhatsApp or email app with a pre-filled message, and you decide whether to send it. If you do, the controller receives the data it contains: your name, arrival and departure dates, number of guests, apartment and type of stay, whether you are travelling with a dog (with its name and size) and your message, as well as the phone number or email address you write from.</p><p><strong>Your stay.</strong> For guests who stay with us, the controller also processes the data needed to manage the booking and to meet legal obligations: guests’ personal details and identity document data, which must be reported to the police (Questura) through the Alloggiati Web service; where applicable, the data required for the tourist tax and for tourism statistics; and tax and accounting data relating to payment. If you book through Airbnb, the controller receives from Airbnb the data needed to manage your booking; Airbnb also processes them as an independent controller under its own privacy policy.</p>"
+      },
+      {
+        "id": "finalita-basi-giuridiche",
+        "title": "Purposes and legal bases",
+        "html": "<ul><li><strong>Site security</strong> (IP addresses logged by GitHub): legitimate interest in protecting the site against abuse and cyber attacks (Article 6(1)(f) GDPR).</li><li><strong>Storing your cookie choices</strong>: compliance with legal obligations on consent (Article 6(1)(c) GDPR); as a technical tool, it does not require consent (Article 122 of Italian Legislative Decree 196/2003, the ‘Privacy Code’).</li><li><strong>Displaying the Airbnb listing</strong>: your consent (Article 6(1)(a) GDPR and Article 122 of the Privacy Code), which you may withdraw at any time.</li><li><strong>Replying to enquiries and managing your booking and stay</strong>: steps taken at your request prior to entering into a contract, and performance of the contract (Article 6(1)(b) GDPR).</li><li><strong>Legal obligations</strong>, such as reporting guests to the police (Article 109 of the Italian Consolidated Law on Public Security, TULPS), the tourist tax and tourism statistics where applicable, and tax and accounting requirements: compliance with a legal obligation (Article 6(1)(c) GDPR).</li></ul><p>The controller does not carry out any profiling and does not take decisions based solely on automated processing.</p>"
+      },
+      {
+        "id": "conferimento",
+        "title": "Do you have to provide your data?",
+        "html": "<p>Providing data in a booking enquiry is optional, but without them we cannot reply or arrange your stay. The identity data requested on arrival, however, are required by law: without them, we cannot accommodate you.</p>"
+      },
+      {
+        "id": "conservazione",
+        "title": "How long we keep data",
+        "html": "<ul><li><strong>Booking enquiries</strong>: for as long as needed to handle the enquiry and, if no booking follows, no longer than 12 months.</li><li><strong>Bookings and stays</strong>: for the duration of the relationship; tax and accounting records for 10 years, as required by law.</li><li><strong>Reports to the authorities</strong> (Alloggiati Web, tourist tax, statistics): for the period required by the applicable rules.</li><li><strong>Cookie preferences</strong> (<em>daisy-consent</em>): 6 months, after which you will be asked again.</li><li><strong>IP addresses logged by GitHub</strong>: for the periods set out in <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" target=\"_blank\" rel=\"noopener\">GitHub’s privacy statement</a>.</li></ul><p>After these periods, data are deleted or anonymised.</p>"
+      },
+      {
+        "id": "destinatari",
+        "title": "Who may receive the data",
+        "html": "<p>Your data are not made public. Only to the extent necessary, they may be received by:</p><ul><li>technical service providers: GitHub (website hosting), the controller’s email provider and WhatsApp (part of Meta), if you choose to write via that app;</li><li>professionals who assist the controller, such as an accountant;</li><li>public authorities, where required by law: for example the police via Alloggiati Web, the municipality for the tourist tax where applicable, and the tax authorities.</li></ul><p>Airbnb, for the listing widget and for bookings made on its platform, and Google, if you open the Google Maps link, process data as independent controllers under their own policies: see <a href=\"https://www.airbnb.co.uk/help/article/2855\" target=\"_blank\" rel=\"noopener\">Airbnb’s privacy policy</a> and <a href=\"https://policies.google.com/privacy?hl=en-GB\" target=\"_blank\" rel=\"noopener\">Google’s privacy policy</a>.</p>"
+      },
+      {
+        "id": "trasferimenti-extra-ue",
+        "title": "Transfers outside the European Union",
+        "html": "<p>Some providers, such as GitHub (part of Microsoft) and WhatsApp (part of Meta), belong to groups based in the United States and may process data outside the European Union. In these cases, transfers are based on the EU-US Data Privacy Framework, recognised as adequate by the European Commission in its decision of 10 July 2023 (Article 45 GDPR), or on standard contractual clauses approved by the Commission (Article 46 GDPR). You may ask the controller for more information on the safeguards in place.</p>"
+      },
+      {
+        "id": "diritti",
+        "title": "Your rights",
+        "html": "<p>Under Articles 15 to 22 GDPR, you have the right to:</p><ul><li><strong>access</strong> your data and obtain a copy of them;</li><li>have inaccurate or incomplete data <strong>rectified</strong>;</li><li>have your data <strong>erased</strong>, unless they must be kept by law;</li><li><strong>restrict</strong> processing;</li><li>receive the data you have provided in a structured, commonly used format (<strong>portability</strong>);</li><li><strong>object</strong> to processing based on legitimate interest.</li></ul><p>You may also <strong>withdraw your consent</strong> to third-party content at any time via the ‘Cookie preferences’ link at the bottom of every page. Withdrawal does not affect the lawfulness of processing carried out before it.</p><p>To exercise your rights, simply write to <a href=\"mailto:%%email%%\">%%email%%</a>: you will receive a reply without undue delay and, as a rule, within one month.</p>"
+      },
+      {
+        "id": "reclamo",
+        "title": "Right to lodge a complaint",
+        "html": "<p>If you believe that the processing of your data infringes the GDPR, you may lodge a complaint with the Garante per la protezione dei dati personali, the Italian Data Protection Authority (<a href=\"https://www.garanteprivacy.it\" target=\"_blank\" rel=\"noopener\">www.garanteprivacy.it</a>). If you live or work in another EU country, you may also contact the <a href=\"https://www.edpb.europa.eu/about-edpb/about-edpb/members_en\" target=\"_blank\" rel=\"noopener\">supervisory authority of that country</a>.</p>"
+      },
+      {
+        "id": "modifiche",
+        "title": "Changes to this notice",
+        "html": "<p>This notice may be updated, for example if the services used by the site or the law change. The version in force is always the one published on this page. Last updated: %%updated%%.</p>"
+      }
+    ]
+  },
+  "cookie": {
+    "title": "Cookie policy",
+    "meta_description": "Cookie policy for A spasso con Daisy · Chianti Home: the site sets no cookies of its own, and the Airbnb listing loads only with your consent.",
+    "intro": "This page explains which cookies and similar technologies are used on the A spasso con Daisy · Chianti Home website and how to manage your preferences. In short: the site sets no cookies of its own, and Airbnb content is loaded only if you choose.",
+    "sections": [
+      {
+        "id": "cosa-sono",
+        "title": "What cookies are",
+        "html": "<p>Cookies are small text files that websites save in your browser and read again on later visits. Other technologies, such as the browser’s <em>localStorage</em>, can store information in a similar way and are subject to the same rules.</p><p><strong>Technical</strong> tools, which the site needs in order to work, do not require consent. All others, including profiling tools and those set by third parties, may only be used with the user’s consent, as required by Article 122 of the Italian Privacy Code and the Garante’s Guidelines of 10 June 2021.</p>"
+      },
+      {
+        "id": "strumenti-usati",
+        "title": "Cookies and tools used on this site",
+        "html": "<p>The site sets no cookies of its own and uses no analytics. It stores a single technical item in your browser; third-party content is loaded only with your consent.</p><table><thead><tr><th>Name</th><th>Provider</th><th>Purpose</th><th>Duration</th><th>Category</th></tr></thead><tbody><tr><td><em>daisy-consent</em> (localStorage)</td><td>This site</td><td>Remembers your cookie choices and the date you made them. It does not track your browsing.</td><td>6 months</td><td>Technical and necessary (always on)</td></tr><tr><td>Airbnb cookies</td><td>Airbnb (third party)</td><td>Display the listing for each apartment; Airbnb may also use them for its own purposes, including profiling.</td><td>Set by Airbnb (see its cookie policy)</td><td>Third-party content (only with consent)</td></tr><tr><td>None</td><td>—</td><td>The site does not currently use any statistics tools.</td><td>—</td><td>Statistics</td></tr></tbody></table><p>The availability calendar only shows booked dates and sets no cookies. As explained in the privacy notice, GitHub, which hosts the site, logs visitors’ IP addresses for security purposes.</p>"
+      },
+      {
+        "id": "contenuti-terze-parti",
+        "title": "Third-party content: Airbnb",
+        "html": "<p>For each apartment (Il Bilocale and Il Monolocale), the site can display the Airbnb widget with its listing. The widget is loaded from Airbnb’s servers only after you consent to the ‘Third-party content’ category. Until then, a box with a ‘Show content’ button appears in its place: by pressing it, you consent to the Airbnb content being loaded.</p><p>Once the widget is loaded, Airbnb receives your IP address and some technical data about your device, and may set its own cookies, including profiling cookies. Airbnb acts as an independent controller: the controller of this site has no control over these cookies and no access to the data they collect. For more information, see Airbnb’s <a href=\"https://www.airbnb.co.uk/help/article/2855\" target=\"_blank\" rel=\"noopener\">privacy policy</a> and <a href=\"https://www.airbnb.co.uk/terms/cookie_policy\" target=\"_blank\" rel=\"noopener\">cookie policy</a>.</p>"
+      },
+      {
+        "id": "link-esterni",
+        "title": "External links: Google Maps, WhatsApp and email",
+        "html": "<p>The ‘Open in Google Maps’ button is a simple link: nothing is loaded from Google unless you click it. Once Google Maps opens, Google’s <a href=\"https://policies.google.com/privacy?hl=en-GB\" target=\"_blank\" rel=\"noopener\">privacy policy</a> and cookie settings apply.</p><p>Likewise, the send buttons on the booking form open WhatsApp or your email app without setting any cookies on the site.</p>"
+      },
+      {
+        "id": "gestire-preferenze",
+        "title": "Managing your preferences",
+        "html": "<p>On your first visit, a banner appears with three buttons: <strong>‘Accept all’</strong>, <strong>‘Reject’</strong> and <strong>‘Customise’</strong>, which lets you choose individual categories. Closing the banner with the X rejects all non-essential tools: only technical ones remain active.</p><p>No boxes are pre-ticked, and scrolling the page does not count as consent. If you reject, the site works normally: the Airbnb listing is simply not shown.</p><p>Your choice is remembered for 6 months, after which you will be asked again. You can change it or withdraw your consent at any time via the <strong>‘Cookie preferences’</strong> link at the bottom of every page.</p>"
+      },
+      {
+        "id": "cancellare-cookie",
+        "title": "Deleting cookies and site data in your browser",
+        "html": "<p>You can delete cookies and site data at any time in your browser settings, including the choice stored by this site. If you do, the banner will appear again on your next visit. Here is where to find the option in the most common browsers (menu names may vary slightly between versions):</p><ul><li><strong>Chrome</strong>: Settings › Privacy and security › Delete browsing data (<a href=\"https://support.google.com/chrome/answer/95647?hl=en-GB\" target=\"_blank\" rel=\"noopener\">Google guide</a>)</li><li><strong>Firefox</strong>: Settings › Privacy &amp; Security › Cookies and Site Data › Clear Data (<a href=\"https://support.mozilla.org/kb/clear-cookies-and-site-data-firefox\" target=\"_blank\" rel=\"noopener\">Mozilla guide</a>)</li><li><strong>Safari</strong>: on a Mac, Safari › Settings › Privacy › Manage Website Data; on iPhone and iPad, Settings › Safari › Clear History and Website Data (<a href=\"https://support.apple.com/en-gb/guide/safari/sfri11471/mac\" target=\"_blank\" rel=\"noopener\">Apple guide</a>)</li><li><strong>Edge</strong>: Settings › Privacy, search and services › Clear browsing data (<a href=\"https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09\" target=\"_blank\" rel=\"noopener\">Microsoft guide</a>)</li></ul><p>In the same settings you can also block third-party cookies.</p>"
+      },
+      {
+        "id": "contatti",
+        "title": "Data controller and contact",
+        "html": "<p>The data controller is <strong>%%owner_name%%</strong>, %%owner_address%%. For any questions about cookies or your preferences, please write to <a href=\"mailto:%%email%%\">%%email%%</a>. Full information on how personal data are processed is available in the privacy notice.</p>"
+      },
+      {
+        "id": "aggiornamenti",
+        "title": "Updates",
+        "html": "<p>The site does not currently use any statistics tools: the ‘Statistics’ category appears in the preferences only with a view to possible future use and does not enable anything at present. If statistics tools or other third-party services are introduced in future, this cookie policy will be updated and, where necessary, you will be asked for your consent again.</p><p>Last updated: %%updated%%.</p>"
+      }
+    ]
+  }
+}

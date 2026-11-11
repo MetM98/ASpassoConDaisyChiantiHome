@@ -1,0 +1,163 @@
+{
+  "labels": {
+    "privacy": "Datenschutz",
+    "cookie": "Cookies",
+    "cookie_prefs": "Cookie-Einstellungen",
+    "back_home": "Zurück zur Website",
+    "updated": "Letzte Aktualisierung",
+    "cin": "CIN",
+    "vat": "USt-IdNr.",
+    "todo": "wird ergänzt",
+    "privacy_link": "Datenschutzerklärung lesen",
+    "on_this_page": "Auf dieser Seite"
+  },
+  "consent": {
+    "title": "Ihre Privatsphäre",
+    "text": "Diese Website verwendet nur technische Hilfsmittel, die für ihren Betrieb notwendig sind. Mit Ihrer Einwilligung zeigen wir außerdem Inhalte Dritter an, etwa das Airbnb-Inserat, das Cookies setzen kann, auch zu Profiling-Zwecken. Ihre Auswahl können Sie jederzeit über „Cookie-Einstellungen“ unten auf der Seite ändern.",
+    "accept": "Alle akzeptieren",
+    "reject": "Ablehnen",
+    "customize": "Anpassen",
+    "save": "Einstellungen speichern",
+    "close": "Schließen und ablehnen",
+    "more": "Cookie-Richtlinie",
+    "dialog_title": "Cookie-Einstellungen",
+    "dialog_text": "Wählen Sie, welche Inhalte aktiviert werden sollen. Technische Hilfsmittel sind immer aktiv, da die Website sie für ihren Betrieb benötigt.",
+    "always_on": "Immer aktiv",
+    "categories": {
+      "necessary": {
+        "title": "Technisch notwendig",
+        "text": "Sie speichern Ihre Cookie-Auswahl und verfolgen nicht Ihr Surfverhalten."
+      },
+      "embeds": {
+        "title": "Inhalte Dritter",
+        "text": "Airbnb-Inserat und andere externe Inhalte. Diese Dienste können eigene Cookies setzen, auch zu Profiling-Zwecken."
+      },
+      "analytics": {
+        "title": "Statistiken",
+        "text": "Messung der Besuche zur Verbesserung der Website."
+      }
+    },
+    "placeholder_title": "Inhalt von Airbnb",
+    "placeholder_text": "Zur Anzeige müssen wir einen Inhalt von Airbnb laden, der Cookies von Drittanbietern setzen kann.",
+    "placeholder_button": "Inhalt anzeigen",
+    "saved": "Einstellungen gespeichert"
+  },
+  "calendar": {
+    "free": "Frei",
+    "booked": "Belegt",
+    "prev": "Vorheriger Monat",
+    "next": "Nächster Monat",
+    "updated": "Verfügbarkeit aktualisiert am",
+    "note": "Die Verfügbarkeit wird alle paar Stunden mit Airbnb abgeglichen – die Termine bestätigen wir Ihnen in jedem Fall.",
+    "overlap": "Achtung: Einige der gewählten Termine sind für diese Wohnung bereits belegt."
+  },
+  "airbnb": {
+    "title": "Auf Airbnb buchen",
+    "open": "Auf Airbnb ansehen",
+    "soon": "Bald auch auf Airbnb"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "meta_description": "Datenschutzerklärung von A spasso con Daisy · Chianti Home: welche Daten wir verarbeiten, warum, wie lange und welche Rechte Sie haben.",
+    "intro": "Diese Datenschutzerklärung nach Art. 13 der Verordnung (EU) 2016/679 (Datenschutz-Grundverordnung, „DSGVO“) erläutert, wie personenbezogene Daten verarbeitet werden, wenn Sie diese Website besuchen, eine Anfrage senden oder in den Ferienwohnungen von A spasso con Daisy · Chianti Home übernachten. Kurz gesagt: Die Website setzt keine eigenen Cookies und verwendet keine Analysetools; die Daten Ihrer Anfrage dienen nur dazu, Ihnen zu antworten und Ihre Buchung abzuwickeln.",
+    "sections": [
+      {
+        "id": "titolare",
+        "title": "Verantwortlicher",
+        "html": "<p>Verantwortlicher im Sinne der DSGVO ist <strong>%%owner_name%%</strong>, %%owner_address%%, Steuernummer bzw. USt-IdNr. %%owner_tax_id%%. Der Verantwortliche betreibt die Ferienwohnungen Il Bilocale und Il Monolocale in Barberino Tavarnelle (Florenz) und die Website %%site_url%%.</p><p>Bei Fragen zu dieser Datenschutzerklärung oder zur Ausübung Ihrer Rechte schreiben Sie bitte an <a href=\"mailto:%%email%%\">%%email%%</a>.</p>"
+      },
+      {
+        "id": "dati-trattati",
+        "title": "Welche Daten wir verarbeiten",
+        "html": "<p><strong>Besuch der Website.</strong> Die Website ist statisch und wird bei GitHub Pages gehostet, einem Dienst der GitHub, Inc. (USA, Teil von Microsoft). Um die Seiten auszuliefern, erhält GitHub die IP-Adresse der Besucher und speichert sie zu Sicherheitszwecken. Die Website setzt keine Cookies, verwendet keine Analysetools und lädt keine Ressourcen von Dritten: Schriften und Bilder liegen auf der Website selbst.</p><p><strong>Cookie-Einstellungen.</strong> In Ihrem Browser wird ein einziger technischer Eintrag gespeichert, <em>daisy-consent</em>, der Ihre Cookie-Auswahl und das Datum Ihrer Entscheidung enthält. Er verbleibt auf Ihrem Gerät und wird nicht an den Verantwortlichen übermittelt.</p><p><strong>Inhalte Dritter.</strong> Nur mit Ihrer Einwilligung lädt die Website das Airbnb-Inserat der jeweiligen Wohnung. In diesem Fall erhält Airbnb Ihre IP-Adresse und kann eigene Cookies setzen, auch zu Profiling-Zwecken. Der Belegungskalender zeigt dagegen nur belegte Tage, die durch einen automatischen Prozess auf GitHub aus dem Airbnb-Kalender übernommen werden: Er enthält keine Gästedaten und setzt keine Cookies. Der Link „In Google Maps öffnen“ lädt nichts von Google, solange Sie ihn nicht anklicken.</p><p><strong>Buchungsanfragen.</strong> Das Formular auf der Seite sendet oder speichert keinerlei Daten auf der Website: Es öffnet Ihre eigene WhatsApp- oder E-Mail-App mit einer vorausgefüllten Nachricht, und Sie entscheiden selbst, ob Sie sie absenden. Wenn Sie das tun, erhält der Verantwortliche die darin enthaltenen Daten: Name, An- und Abreisedatum, Anzahl der Gäste, Wohnung und Art des Aufenthalts, ob Sie mit Hund reisen (mit Name und Größe des Hundes) und Ihre Nachricht sowie die Telefonnummer oder E-Mail-Adresse, von der aus Sie schreiben.</p><p><strong>Aufenthalt.</strong> Bei einem Aufenthalt verarbeitet der Verantwortliche außerdem die Daten, die für die Buchung und die Erfüllung gesetzlicher Pflichten erforderlich sind: Personalien und Ausweisdaten der Gäste, die über den Dienst Alloggiati Web der Polizei (Questura) zu melden sind; soweit vorgesehen, die Daten für die Aufenthaltsabgabe (Kurtaxe) und die Tourismusstatistik; sowie Steuer- und Buchhaltungsdaten zur Zahlung. Wenn Sie über Airbnb buchen, erhält der Verantwortliche von Airbnb die für die Buchung nötigen Daten; Airbnb verarbeitet sie außerdem als eigenständiger Verantwortlicher nach seiner eigenen Datenschutzerklärung.</p>"
+      },
+      {
+        "id": "finalita-basi-giuridiche",
+        "title": "Zwecke und Rechtsgrundlagen",
+        "html": "<ul><li><strong>Sicherheit der Website</strong> (von GitHub gespeicherte IP-Adressen): berechtigtes Interesse am Schutz der Website vor Missbrauch und Cyberangriffen (Art. 6 Abs. 1 lit. f DSGVO).</li><li><strong>Speicherung Ihrer Cookie-Auswahl</strong>: Erfüllung gesetzlicher Pflichten im Zusammenhang mit der Einwilligung (Art. 6 Abs. 1 lit. c DSGVO); als technisches Hilfsmittel erfordert sie keine Einwilligung (Art. 122 des italienischen Datenschutzkodex, Gesetzesvertretendes Dekret Nr. 196/2003, „Codice privacy“).</li><li><strong>Anzeige des Airbnb-Inserats</strong>: Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO und Art. 122 Codice privacy), die Sie jederzeit widerrufen können.</li><li><strong>Beantwortung von Anfragen sowie Abwicklung von Buchung und Aufenthalt</strong>: Durchführung vorvertraglicher Maßnahmen auf Ihre Anfrage und Erfüllung des Vertrags (Art. 6 Abs. 1 lit. b DSGVO).</li><li><strong>Gesetzliche Pflichten</strong>, etwa die Meldung der Gäste an die Polizei (Art. 109 des italienischen Einheitstexts der Gesetze über die öffentliche Sicherheit, TULPS), Aufenthaltsabgabe und Tourismusstatistik, soweit vorgesehen, sowie steuerliche und buchhalterische Pflichten: Erfüllung einer rechtlichen Verpflichtung (Art. 6 Abs. 1 lit. c DSGVO).</li></ul><p>Der Verantwortliche führt kein Profiling durch und trifft keine Entscheidungen, die ausschließlich auf einer automatisierten Verarbeitung beruhen.</p>"
+      },
+      {
+        "id": "conferimento",
+        "title": "Pflicht zur Bereitstellung der Daten",
+        "html": "<p>Die Angabe von Daten in einer Buchungsanfrage ist freiwillig; ohne sie können wir Ihnen jedoch nicht antworten und Ihren Aufenthalt nicht organisieren. Die bei der Ankunft erfragten Ausweisdaten sind dagegen gesetzlich vorgeschrieben: Ohne sie ist eine Unterbringung nicht möglich.</p>"
+      },
+      {
+        "id": "conservazione",
+        "title": "Speicherdauer",
+        "html": "<ul><li><strong>Buchungsanfragen</strong>: so lange, wie es für die Bearbeitung der Anfrage erforderlich ist, und, falls keine Buchung folgt, höchstens 12 Monate.</li><li><strong>Buchung und Aufenthalt</strong>: für die Dauer des Vertragsverhältnisses; Steuer- und Buchhaltungsunterlagen 10 Jahre lang, wie gesetzlich vorgeschrieben.</li><li><strong>Meldungen an Behörden</strong> (Alloggiati Web, Aufenthaltsabgabe, Statistik): für die nach den geltenden Vorschriften vorgesehene Dauer.</li><li><strong>Cookie-Einstellungen</strong> (<em>daisy-consent</em>): 6 Monate; danach werden Sie erneut gefragt.</li><li><strong>Von GitHub gespeicherte IP-Adressen</strong>: gemäß den Fristen in der <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" target=\"_blank\" rel=\"noopener\">Datenschutzerklärung von GitHub</a>.</li></ul><p>Nach Ablauf dieser Fristen werden die Daten gelöscht oder anonymisiert.</p>"
+      },
+      {
+        "id": "destinatari",
+        "title": "Empfänger",
+        "html": "<p>Ihre Daten werden nicht veröffentlicht. Soweit erforderlich, können sie folgenden Empfängern offengelegt werden:</p><ul><li>technischen Dienstleistern: GitHub (Hosting der Website), dem E-Mail-Anbieter des Verantwortlichen und WhatsApp (Teil von Meta), wenn Sie über diese App schreiben;</li><li>Fachleuten, die den Verantwortlichen unterstützen, etwa einem Steuerberater;</li><li>Behörden, soweit gesetzlich vorgeschrieben: zum Beispiel der Polizei über Alloggiati Web, der Gemeinde für die Aufenthaltsabgabe, soweit vorgesehen, und den Finanzbehörden.</li></ul><p>Airbnb (für das Inserat und für Buchungen auf seiner Plattform) und Google (wenn Sie den Link zu Google Maps öffnen) verarbeiten Daten als eigenständige Verantwortliche nach ihren eigenen Bestimmungen: siehe die <a href=\"https://www.airbnb.de/help/article/2855\" target=\"_blank\" rel=\"noopener\">Datenschutzerklärung von Airbnb</a> und die <a href=\"https://policies.google.com/privacy?hl=de\" target=\"_blank\" rel=\"noopener\">Datenschutzerklärung von Google</a>.</p>"
+      },
+      {
+        "id": "trasferimenti-extra-ue",
+        "title": "Übermittlung in Länder außerhalb der EU",
+        "html": "<p>Einige Dienstleister, etwa GitHub (Teil von Microsoft) und WhatsApp (Teil von Meta), gehören zu Unternehmensgruppen mit Sitz in den USA und können Daten auch außerhalb der Europäischen Union verarbeiten. In diesen Fällen erfolgt die Übermittlung auf Grundlage des EU-US Data Privacy Framework, für das die Europäische Kommission am 10. Juli 2023 einen Angemessenheitsbeschluss erlassen hat (Art. 45 DSGVO), oder auf Grundlage der von der Kommission erlassenen Standardvertragsklauseln (Art. 46 DSGVO). Auf Anfrage erhalten Sie vom Verantwortlichen weitere Informationen zu den bestehenden Garantien.</p>"
+      },
+      {
+        "id": "diritti",
+        "title": "Ihre Rechte",
+        "html": "<p>Nach Art. 15 bis 22 DSGVO haben Sie das Recht auf:</p><ul><li><strong>Auskunft</strong> über Ihre Daten und eine Kopie davon;</li><li><strong>Berichtigung</strong> unrichtiger oder unvollständiger Daten;</li><li><strong>Löschung</strong> Ihrer Daten, sofern sie nicht aufgrund gesetzlicher Pflichten aufbewahrt werden müssen;</li><li><strong>Einschränkung</strong> der Verarbeitung;</li><li><strong>Datenübertragbarkeit</strong> der von Ihnen bereitgestellten Daten in einem strukturierten, gängigen Format;</li><li><strong>Widerspruch</strong> gegen Verarbeitungen, die auf berechtigten Interessen beruhen.</li></ul><p>Außerdem können Sie Ihre Einwilligung in Inhalte Dritter jederzeit über den Link „Cookie-Einstellungen“ unten auf jeder Seite <strong>widerrufen</strong>. Der Widerruf berührt nicht die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung.</p><p>Um Ihre Rechte auszuüben, genügt eine Nachricht an <a href=\"mailto:%%email%%\">%%email%%</a>. Sie erhalten unverzüglich, in der Regel innerhalb eines Monats, eine Antwort.</p>"
+      },
+      {
+        "id": "reclamo",
+        "title": "Beschwerderecht",
+        "html": "<p>Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen die DSGVO verstößt, können Sie sich beim Garante per la protezione dei dati personali (italienische Datenschutzbehörde, <a href=\"https://www.garanteprivacy.it\" target=\"_blank\" rel=\"noopener\">www.garanteprivacy.it</a>) beschweren. Sie können sich auch an die <a href=\"https://www.edpb.europa.eu/about-edpb/about-edpb/members_en\" target=\"_blank\" rel=\"noopener\">Aufsichtsbehörde des EU-Mitgliedstaats</a> wenden, in dem Sie wohnen oder arbeiten.</p>"
+      },
+      {
+        "id": "modifiche",
+        "title": "Änderungen dieser Datenschutzerklärung",
+        "html": "<p>Diese Datenschutzerklärung kann aktualisiert werden, etwa wenn sich die von der Website genutzten Dienste oder die Rechtslage ändern. Maßgeblich ist stets die auf dieser Seite veröffentlichte Fassung. Letzte Aktualisierung: %%updated%%.</p>"
+      }
+    ]
+  },
+  "cookie": {
+    "title": "Cookie-Richtlinie",
+    "meta_description": "Cookie-Richtlinie von A spasso con Daisy · Chianti Home: keine eigenen Cookies; das Airbnb-Inserat wird nur mit Ihrer Einwilligung geladen.",
+    "intro": "Diese Seite erläutert, welche Cookies und ähnlichen Technologien auf der Website von A spasso con Daisy · Chianti Home verwendet werden und wie Sie Ihre Einstellungen verwalten können. Kurz gesagt: Die Website setzt keine eigenen Cookies, und Inhalte von Airbnb werden nur geladen, wenn Sie das möchten.",
+    "sections": [
+      {
+        "id": "cosa-sono",
+        "title": "Was sind Cookies?",
+        "html": "<p>Cookies sind kleine Textdateien, die Websites in Ihrem Browser speichern und bei späteren Besuchen wieder auslesen. Andere Technologien, etwa der <em>localStorage</em> des Browsers, speichern Informationen auf ähnliche Weise und unterliegen denselben Regeln.</p><p><strong>Technisch notwendige</strong> Hilfsmittel, die für den Betrieb der Website erforderlich sind, benötigen keine Einwilligung. Alle anderen, einschließlich Profiling-Cookies und Cookies von Drittanbietern, dürfen nur mit Einwilligung der Nutzer verwendet werden, wie es Art. 122 des italienischen Datenschutzkodex (Codice privacy) und die Leitlinien des Garante vom 10. Juni 2021 vorsehen.</p>"
+      },
+      {
+        "id": "strumenti-usati",
+        "title": "Cookies und Technologien auf dieser Website",
+        "html": "<p>Die Website setzt keine eigenen Cookies und verwendet keine Analysetools. Sie speichert einen einzigen technischen Eintrag in Ihrem Browser; Inhalte Dritter werden nur mit Ihrer Einwilligung geladen.</p><table><thead><tr><th>Name</th><th>Anbieter</th><th>Zweck</th><th>Speicherdauer</th><th>Kategorie</th></tr></thead><tbody><tr><td><em>daisy-consent</em> (localStorage)</td><td>Diese Website</td><td>Speichert Ihre Cookie-Auswahl und das Datum Ihrer Entscheidung. Verfolgt nicht Ihr Surfverhalten.</td><td>6 Monate</td><td>Technisch notwendig (immer aktiv)</td></tr><tr><td>Airbnb-Cookies</td><td>Airbnb (Drittanbieter)</td><td>Anzeige des Inserats der jeweiligen Wohnung; Airbnb kann sie auch für eigene Zwecke nutzen, einschließlich Profiling.</td><td>Von Airbnb festgelegt (siehe dessen Cookie-Richtlinie)</td><td>Inhalte Dritter (nur mit Einwilligung)</td></tr><tr><td>Keine</td><td>—</td><td>Derzeit verwendet die Website keine Statistiktools.</td><td>—</td><td>Statistiken</td></tr></tbody></table><p>Der Belegungskalender zeigt nur belegte Tage und setzt keine Cookies. Wie in der Datenschutzerklärung beschrieben, speichert GitHub als Hoster der Website die IP-Adressen der Besucher zu Sicherheitszwecken.</p>"
+      },
+      {
+        "id": "contenuti-terze-parti",
+        "title": "Inhalte Dritter: Airbnb",
+        "html": "<p>Für jede Wohnung (Il Bilocale und Il Monolocale) kann die Website das Airbnb-Widget mit dem jeweiligen Inserat anzeigen. Das Widget wird erst nach Ihrer Einwilligung in die Kategorie „Inhalte Dritter“ von den Servern von Airbnb geladen. Bis dahin erscheint an seiner Stelle ein Feld mit der Schaltfläche „Inhalt anzeigen“: Wenn Sie darauf klicken, willigen Sie in das Laden des Airbnb-Inhalts ein.</p><p>Sobald das Widget geladen ist, erhält Airbnb Ihre IP-Adresse und einige technische Daten Ihres Geräts und kann eigene Cookies setzen, auch zu Profiling-Zwecken. Airbnb handelt als eigenständiger Verantwortlicher: Der Verantwortliche dieser Website hat keinen Einfluss auf diese Cookies und keinen Zugriff auf die damit erhobenen Daten. Weitere Informationen finden Sie in der <a href=\"https://www.airbnb.de/help/article/2855\" target=\"_blank\" rel=\"noopener\">Datenschutzerklärung</a> und der <a href=\"https://www.airbnb.de/terms/cookie_policy\" target=\"_blank\" rel=\"noopener\">Cookie-Richtlinie</a> von Airbnb.</p>"
+      },
+      {
+        "id": "link-esterni",
+        "title": "Externe Links: Google Maps, WhatsApp und E-Mail",
+        "html": "<p>Die Schaltfläche „In Google Maps öffnen“ ist ein einfacher Link: Solange Sie ihn nicht anklicken, wird nichts von Google geladen. Sobald Google Maps geöffnet ist, gelten die <a href=\"https://policies.google.com/privacy?hl=de\" target=\"_blank\" rel=\"noopener\">Datenschutzerklärung</a> und die Cookie-Einstellungen von Google.</p><p>Ebenso öffnen die Sende-Schaltflächen des Buchungsformulars WhatsApp oder Ihre E-Mail-App, ohne Cookies auf der Website zu setzen.</p>"
+      },
+      {
+        "id": "gestire-preferenze",
+        "title": "Einstellungen verwalten",
+        "html": "<p>Bei Ihrem ersten Besuch erscheint ein Banner mit drei Schaltflächen: <strong>„Alle akzeptieren“</strong>, <strong>„Ablehnen“</strong> und <strong>„Anpassen“</strong>, mit der Sie einzelne Kategorien auswählen können. Wenn Sie das Banner über das X schließen, werden alle nicht notwendigen Hilfsmittel abgelehnt: Aktiv bleiben nur die technisch notwendigen.</p><p>Es sind keine Kästchen vorausgewählt, und das Scrollen der Seite gilt nicht als Einwilligung. Wenn Sie ablehnen, funktioniert die Website ganz normal; lediglich das Airbnb-Inserat wird nicht angezeigt.</p><p>Ihre Auswahl wird 6 Monate lang gespeichert; danach werden Sie erneut gefragt. Sie können sie jederzeit über den Link <strong>„Cookie-Einstellungen“</strong> unten auf jeder Seite ändern oder Ihre Einwilligung widerrufen.</p>"
+      },
+      {
+        "id": "cancellare-cookie",
+        "title": "Cookies und Websitedaten im Browser löschen",
+        "html": "<p>Sie können Cookies und Websitedaten, einschließlich der von dieser Website gespeicherten Auswahl, jederzeit in den Einstellungen Ihres Browsers löschen. In diesem Fall erscheint das Banner bei Ihrem nächsten Besuch erneut. Hier finden Sie die Option in den gängigsten Browsern (die Bezeichnungen können je nach Version leicht abweichen):</p><ul><li><strong>Chrome</strong>: Einstellungen › Datenschutz und Sicherheit › Browserdaten löschen (<a href=\"https://support.google.com/chrome/answer/95647?hl=de\" target=\"_blank\" rel=\"noopener\">Anleitung von Google</a>)</li><li><strong>Firefox</strong>: Einstellungen › Datenschutz &amp; Sicherheit › Cookies und Website-Daten › Daten entfernen (<a href=\"https://support.mozilla.org/kb/cookies-und-website-daten-in-firefox-loschen\" target=\"_blank\" rel=\"noopener\">Anleitung von Mozilla</a>)</li><li><strong>Safari</strong>: auf dem Mac Safari › Einstellungen › Datenschutz › Websitedaten verwalten; auf iPhone und iPad Einstellungen › Safari › Verlauf und Websitedaten löschen (<a href=\"https://support.apple.com/de-de/guide/safari/sfri11471/mac\" target=\"_blank\" rel=\"noopener\">Anleitung von Apple</a>)</li><li><strong>Edge</strong>: Einstellungen › Datenschutz, Suche und Dienste › Browserdaten löschen (<a href=\"https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09\" target=\"_blank\" rel=\"noopener\">Anleitung von Microsoft</a>)</li></ul><p>In denselben Einstellungen können Sie auch Cookies von Drittanbietern blockieren.</p>"
+      },
+      {
+        "id": "contatti",
+        "title": "Verantwortlicher und Kontakt",
+        "html": "<p>Verantwortlicher ist <strong>%%owner_name%%</strong>, %%owner_address%%. Bei Fragen zu Cookies und Ihren Einstellungen schreiben Sie bitte an <a href=\"mailto:%%email%%\">%%email%%</a>. Ausführliche Informationen zur Verarbeitung personenbezogener Daten finden Sie in der Datenschutzerklärung.</p>"
+      },
+      {
+        "id": "aggiornamenti",
+        "title": "Aktualisierungen",
+        "html": "<p>Derzeit verwendet die Website keine Statistiktools: Die Kategorie „Statistiken“ ist in den Einstellungen nur für eine mögliche künftige Nutzung vorgesehen und aktiviert derzeit nichts. Sollten künftig Statistiktools oder andere Dienste Dritter eingesetzt werden, wird diese Cookie-Richtlinie aktualisiert, und Sie werden, falls erforderlich, erneut um Ihre Einwilligung gebeten.</p><p>Letzte Aktualisierung: %%updated%%.</p>"
+      }
+    ]
+  }
+}
