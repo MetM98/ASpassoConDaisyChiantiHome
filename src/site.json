@@ -1,0 +1,16 @@
+{
+  "name": "A spasso con Daisy · Chianti Home",
+  "email": "info@aspassocondaisy.com",
+  "whatsapp": "",
+  "phone": "",
+  "instagram": "",
+  "base_url": "https://metm98.github.io/ASpassoConDaisyChiantiHome/",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Sambuca+Val+di+Pesa+Barberino+Tavarnelle",
+  "noindex": true,
+  "year": 2026,
+  "languages": [
+    { "code": "it", "label": "IT", "path": "" },
+    { "code": "en", "label": "EN", "path": "en/" },
+    { "code": "de", "label": "DE", "path": "de/" }
+  ]
+}

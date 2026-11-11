@@ -1,0 +1,298 @@
+{
+  "lang": "it",
+  "locale": "it_IT",
+  "lang_name": "Italiano",
+  "meta": {
+    "title": "A spasso con Daisy · Chianti Home — Appartamenti dog-friendly nel Chianti Classico",
+    "description": "Due appartamenti nel cuore del Chianti Classico, a 25 km da Firenze e Siena. Piscina, sauna, colazione tipica, esperienze tra ulivi e vigneti. Cani di piccola taglia benvenuti.",
+    "og_image_alt": "Logo di A spasso con Daisy, Chianti Home"
+  },
+  "ui": {
+    "skip": "Vai al contenuto",
+    "menu_open": "Apri il menu",
+    "menu_close": "Chiudi il menu",
+    "lang_label": "Lingua",
+    "photo_soon": "Foto in arrivo",
+    "on_request": "Su prenotazione",
+    "draft": "Da confermare",
+    "back_top": "Torna su",
+    "new_tab": "(si apre in una nuova scheda)",
+    "preview_note": "Anteprima del sito: foto e dettagli in arrivo"
+  },
+  "nav": [
+    { "href": "#apartments", "label": "Appartamenti" },
+    { "href": "#dogs", "label": "Amici a 4 zampe" },
+    { "href": "#territory", "label": "Territorio" },
+    { "href": "#included", "label": "Servizi" },
+    { "href": "#experiences", "label": "Esperienze" },
+    { "href": "#smartworking", "label": "Smartworking" },
+    { "href": "#location", "label": "Dove siamo" }
+  ],
+  "nav_cta": "Prenota",
+  "hero": {
+    "kicker": "Chianti Classico · Toscana",
+    "logo_alt": "A spasso con Daisy — Chianti Home",
+    "tagline": "Due appartamenti nel cuore del Chianti Classico, dove anche i piccoli amici a quattro zampe sono di casa.",
+    "facts": [
+      { "icon": "pin", "text": "25 km da Firenze e Siena" },
+      { "icon": "paw", "text": "Cani di piccola taglia benvenuti" },
+      { "icon": "pool", "text": "Piscine immerse nel verde" }
+    ],
+    "cta_primary": "Verifica disponibilità",
+    "cta_secondary": "Scopri la casa",
+    "scroll": "Scorri",
+    "illustration_alt": "Colline del Chianti di notte, con cipressi, vigneti e un casale illuminato"
+  },
+  "welcome": {
+    "kicker": "Benvenuti",
+    "title": "Un’oasi fatta di tradizioni, racconti e antichi sapori",
+    "poem": [
+      "Allegre campane annunciano giorno di festa, mentre i fiori profumano l’aria;",
+      "antiche case di pietra, come puntini all’orizzonte, abitano la terra;",
+      "calmo il torrente scorre tra freschi boschi, cipressi e dolci colline.",
+      "Un’oasi è pronta ad accogliere viaggiatori stanchi, fatta di tradizioni e racconti, di antichi sapori:",
+      "il Chianti."
+    ],
+    "paragraphs": [
+      "Vi aspettiamo per ospitarVi in ambienti familiari, edificati nel rispetto della tradizione toscana, a venticinque chilometri da Firenze e da Siena.",
+      "Scoprirete spazi raccolti, le cui dimensioni non precluderanno una grande vacanza, breve o lunga che sia. Arredati in stile classico ma accogliente e dotati di tutti i comfort, renderanno unico il Vostro soggiorno."
+    ],
+    "highlights": [
+      { "icon": "kitchen", "title": "Angolo cottura", "text": "Con moderni elettrodomestici, per gustare la cucina tipica toscana e assaggiare i prodotti del luogo." },
+      { "icon": "pool", "title": "Piscine e idromassaggio", "text": "Quando d’estate il sole inonda di luce la nostra terra, piscina e idromassaggio ritemprano corpo e mente." },
+      { "icon": "fireplace", "title": "Caminetto", "text": "Le fiamme del caminetto rendono caldo l’inverno; in alternativa, il riscaldamento a metano." },
+      { "icon": "steam", "title": "Benessere in casa", "text": "Doccia idromassaggio, bagno turco e sauna a infrarossi per ritrovare l’equilibrio." }
+    ]
+  },
+  "apartments": {
+    "kicker": "Gli spazi",
+    "title": "Due appartamenti, un’unica atmosfera",
+    "intro": "Ambienti raccolti e luminosi, arredati in stile classico, dove dipinti, sculture, ceramiche e fotografie raccontano la Toscana con allestimenti che cambiano a ogni stagione.",
+    "units": [
+      {
+        "id": "bilocale",
+        "name": "Il Bilocale",
+        "tagline": "Soggiorno con caminetto e camera matrimoniale separata",
+        "text": "Il calore del caminetto nel soggiorno, una camera matrimoniale tutta per voi e un angolo cottura per scoprire i sapori del Chianti. Ideale per coppie e piccole famiglie.",
+        "illustration": "apt-bilocale.svg",
+        "illustration_alt": "Illustrazione del soggiorno del bilocale con travi a vista, caminetto e camera da letto",
+        "facts": [
+          { "icon": "guests", "text": "Fino a 4 ospiti" },
+          { "icon": "bed", "text": "Camera matrimoniale" },
+          { "icon": "fireplace", "text": "Caminetto" },
+          { "icon": "kitchen", "text": "Angolo cottura" }
+        ]
+      },
+      {
+        "id": "monolocale",
+        "name": "Il Monolocale",
+        "tagline": "Un open space intimo, pensato per due",
+        "text": "Un unico ambiente raccolto, con letto matrimoniale e angolo cottura, perfetto per una fuga romantica o per qualche giorno di smartworking nel verde.",
+        "illustration": "apt-monolocale.svg",
+        "illustration_alt": "Illustrazione del monolocale con letto matrimoniale, angolo cottura e finestra sulle colline",
+        "facts": [
+          { "icon": "guests", "text": "2 ospiti" },
+          { "icon": "bed", "text": "Letto matrimoniale" },
+          { "icon": "kitchen", "text": "Angolo cottura" },
+          { "icon": "desk", "text": "Scrivania e Wi-Fi" }
+        ]
+      }
+    ]
+  },
+  "dogs": {
+    "kicker": "Amici a quattro zampe",
+    "title": "Qui i cani di piccola taglia sono ospiti d’onore",
+    "text": "Daisy Vi aspetta per portarVi a spasso tra i suoi posti preferiti: il parco sotto casa, i sentieri nel bosco, le strade bianche tra vigne e ulivi. Tutti i cani di piccola taglia sono i benvenuti e trovano un pensiero di benvenuto ad attenderli.",
+    "items": [
+      { "icon": "paw", "text": "Welcome dedicato al vostro amico a quattro zampe" },
+      { "icon": "dog-grooming", "text": "Toilette per cani a domicilio, su prenotazione" },
+      { "icon": "leaf", "text": "Passeggiate nel parco dell’Abate e nel bosco intorno a casa" },
+      { "icon": "river", "text": "Pista ciclopedonale lungo il torrente Pesa" }
+    ],
+    "note": "Accogliamo cani di piccola taglia: scriveteci per qualsiasi esigenza del vostro compagno di viaggio.",
+    "illustration_alt": "Illustrazione di Daisy che passeggia su una strada bianca tra i cipressi"
+  },
+  "territory": {
+    "kicker": "Il Chianti intorno a voi",
+    "title": "Colline, vigne e borghi senza tempo",
+    "intro": "Per lasciarvi alle spalle lo stress della vita quotidiana basterà scoprire i luoghi incantevoli che ci circondano: colline coperte di vigneti, da cui nascono grandi vini, punteggiate da olivi secolari il cui olio è apprezzato ovunque. Dal verde emergono borghi fortificati, piccoli paesi e castelli, ricchi di cultura e di tradizioni millenarie.",
+    "places": [
+      { "icon": "bones", "title": "Il parco dei mastodonti", "text": "Sotto casa, il parco dove circa 2,5 milioni di anni fa vivevano i mastodonti di Sambuca, pachidermi simili agli elefanti: lo testimonia un palato con due molari, oggi conservato in museo. Uno dei luoghi più importanti del Chianti dal punto di vista naturalistico, con piante e frutti della tradizione e spazi di ritrovo." },
+      { "icon": "river", "title": "Lungo il fiume Pesa", "text": "Un percorso di grande interesse paesaggistico, dove la natura si lega alla spiritualità, sulle tracce di San Giovanni Gualberto." },
+      { "icon": "church", "title": "Badia a Passignano", "text": "San Giovanni Gualberto, nato nei dintorni di Tavarnelle alla fine del X secolo e fondatore della Congregazione Vallombrosana, visse e riposa nell’Abbazia di San Michele Arcangelo." },
+      { "icon": "castle", "title": "Borghi e castelli", "text": "Paesi fortificati e castelli che emergono dal verde, custodi di arte, storia e tradizioni millenarie." }
+    ],
+    "quote": "Ti immergerai nella bellezza del passato per il Tuo futuro.",
+    "signature": "Abbi cura di splendere"
+  },
+  "services": {
+    "kicker": "Al vostro servizio",
+    "title": "Il cuore del Chianti Classico, vissuto da vicino",
+    "intro": "In questi angoli di Chianti Vi sentirete a casa, con il privilegio di attività e servizi riservati agli ospiti più esigenti.",
+    "blocks": [
+      { "icon": "art", "photo": "", "title": "Arte che cambia con le stagioni", "text": "Per celebrare i tesori artistici di Firenze, gli spazi di A spasso con Daisy accolgono dipinti, sculture, ceramiche e fotografie, con allestimenti che si rinnovano a ogni stagione turistica." },
+      { "icon": "olive", "photo": "olives", "title": "Tra gli ulivi", "text": "Colline baciate dal sole a 450 metri di altitudine, una terra speciale per i frutti che offre. Vi accompagneremo tra le piante che insegnano l’arte della pazienza, fino alla folta chioma in cui si nascondono le olive: scoprirete come la cura quotidiana diventi colore, sapore e fragranza." },
+      { "icon": "grapes", "photo": "vineyard", "title": "Tra i vigneti e in cantina", "text": "Se vorrete, camminerete tra i vigneti e vedrete la terra cambiare a seconda del vino che produce. In una piccola cantina, tempio di riti antichi e di tecnologia moderna, passato, presente e futuro convivono armoniosamente." },
+      { "icon": "bread", "photo": "bread", "title": "Il pane dei grani antichi", "text": "La nostra chef Vi insegnerà a fare il pane con le nostre farine biologiche di grani antichi. A fine lezione gusterete le leccornie appena sfornate, preparate da Voi, con una buona birra artigianale locale." },
+      { "icon": "horse", "photo": "horse", "title": "Giornate a cavallo", "text": "Meravigliosi cavalli potranno rendere speciali le Vostre giornate presso di noi, tra passeggiate, lezioni e momenti di contatto autentico." }
+    ]
+  },
+  "included": {
+    "kicker": "Noi per voi",
+    "title": "Tutto ciò che è compreso nel soggiorno",
+    "intro": "La tariffa giornaliera prevede il pernottamento in uso singolo o matrimoniale e include:",
+    "items": [
+      { "icon": "glass", "text": "Welcome drink" },
+      { "icon": "paw", "text": "Welcome per i nostri amici a quattro zampe" },
+      { "icon": "breakfast", "text": "Colazione con prodotti dolci e salati tipici della zona: scegliete il giorno prima e la ricevete fresca a domicilio" },
+      { "icon": "bed", "text": "Riassetto letti e pulizia del bagno, quotidiani o settimanali a scelta" },
+      { "icon": "towel", "text": "Cambio settimanale della biancheria da bagno" },
+      { "icon": "shower", "text": "Doccia idromassaggio e bagno turco" },
+      { "icon": "sauna", "text": "Sauna a infrarossi" },
+      { "icon": "soap", "text": "Cortesia bagno all’olio del Chianti DOP con oli essenziali e fitoderivati naturali, biologici certificati e non testati sugli animali" },
+      { "icon": "robe", "text": "Accappatoi per due persone e ciabatte da bagno" },
+      { "icon": "hairdryer", "text": "Asciugacapelli" },
+      { "icon": "desk", "text": "Scrivania e Wi-Fi" },
+      { "icon": "tv", "text": "TV a schermo piatto e parabola satellitare" },
+      { "icon": "dishes", "text": "Stoviglie" },
+      { "icon": "linen", "text": "Biancheria" },
+      { "icon": "towel", "text": "Teli piscina" },
+      { "icon": "pool", "text": "Piscina per adulti, per bambini e piscina idromassaggio, immerse nel verde a 500 metri, da maggio a fine agosto" }
+    ],
+    "extras": [
+      { "icon": "extra-bed", "text": "Terzo e quarto letto su richiesta: 45 € ciascuno, in aggiunta alla tariffa" },
+      { "icon": "child", "text": "Bambini gratis fino a 10 anni" }
+    ]
+  },
+  "smartworking": {
+    "kicker": "Smartworking",
+    "title": "Lavorare bene, con i privilegi di una vacanza",
+    "intro": "Lontano dalla confusione e dal traffico, ma vicino a tutte le comodità: qui la Vostra attività lavorativa sarà sostenuta dal buon cibo, dalla tranquillità e dall’aria aperta.",
+    "formulas": [
+      { "icon": "calendar", "title": "Settimana corta", "text": "Dal lunedì al venerdì" },
+      { "icon": "clock", "title": "Giornaliero", "text": "Su prenotazione anticipata, check-in dalle 9 alle 19" }
+    ],
+    "includes_title": "La giornata di lavoro comprende",
+    "items": [
+      { "icon": "coffee", "text": "Prima colazione a buffet" },
+      { "icon": "wifi", "text": "Wi-Fi negli appartamenti e in piscina" },
+      { "icon": "printer", "text": "Stampa gratuita fino a 50 pagine" },
+      { "icon": "pool", "text": "Accesso alle piscine, passeggiata nel parco dell’Abate e nel bosco" },
+      { "icon": "pot", "text": "Pranzo a domicilio su richiesta, oppure uso della cucina" },
+      { "icon": "tv", "text": "TV a schermo piatto e parabola satellitare" },
+      { "icon": "linen", "text": "Stoviglie e biancheria" },
+      { "icon": "sparkle", "text": "Pulizia e sanificazione a fine giornata" }
+    ]
+  },
+  "experiences": {
+    "kicker": "Scegli la tua esperienza",
+    "title": "Esperienze su misura",
+    "badge": "Solo su prenotazione",
+    "intro": "Su richiesta organizziamo visite con guida specializzata, per godere della bellezza dei luoghi e del patrimonio enogastronomico della zona, oppure percorsi che uniscono arte, storia, paesaggio e attività fisica dolce.",
+    "groups": [
+      {
+        "title": "Sapori",
+        "items": [
+          { "icon": "olive", "title": "Olio", "text": "Visita agli uliveti e al frantoio, con degustazione" },
+          { "icon": "grapes", "title": "Vino", "text": "Visita ai vigneti e alla cantina, con degustazione" },
+          { "icon": "bread", "title": "Corso di pane", "text": "Il pane della tradizione con i grani antichi: circa due ore e mezza, poi assaggio e birra artigianale" },
+          { "icon": "pot", "title": "Cooking experience", "text": "Corso di cucina e cena a domicilio, da prenotare tre giorni prima: menù toscano e non solo, terra e mare, lasagne e pasta fatta in casa" },
+          { "icon": "chef", "title": "Personal chef", "text": "Uno chef tutto per voi, nel vostro appartamento" },
+          { "icon": "table", "title": "Eating social", "text": "La convivialità della tavola toscana, in compagnia" }
+        ]
+      },
+      {
+        "title": "Natura e sport",
+        "items": [
+          { "icon": "horse", "title": "Passeggiate a cavallo", "text": "Tra boschi, vigne e strade bianche" },
+          { "icon": "horseshoe", "title": "Equitazione classica", "text": "Lezioni per principianti ed esperti" },
+          { "icon": "bike", "title": "In bicicletta", "text": "Lungo il torrente Pesa, sulla pista ciclabile da Sambuca a Cerbaia: facile, adatta anche ai bambini. Percorsi più impegnativi su misura" },
+          { "icon": "fishing", "title": "Pesca sportiva", "text": "Presso un lago artificiale" },
+          { "icon": "padel", "title": "Padel", "text": "Campi su prenotazione" },
+          { "icon": "trainer", "title": "Personal trainer", "text": "Allenamenti a casa, su misura" }
+        ]
+      },
+      {
+        "title": "Benessere",
+        "items": [
+          { "icon": "massage", "title": "Massaggi", "text": "Relax e percorsi personalizzati" },
+          { "icon": "meditation", "title": "Meditazione", "text": "Meditazione e respirazione" },
+          { "icon": "horse-heart", "title": "Channeling con i cavalli", "text": "Un incontro profondo con i cavalli" },
+          { "icon": "dog-grooming", "title": "Toilette per cani", "text": "Anche Daisy e i suoi amici meritano una coccola, a domicilio" }
+        ]
+      },
+      {
+        "title": "Arte e scoperta",
+        "items": [
+          { "icon": "guide", "title": "Visite guidate", "text": "Arte, storia ed enogastronomia con guida specializzata" },
+          { "icon": "camera", "title": "Fotografia", "text": "Corsi, workshop e servizi fotografici" }
+        ]
+      }
+    ]
+  },
+  "location": {
+    "kicker": "Dove siamo",
+    "title": "Nel cuore del Chianti Classico",
+    "text": "Siamo a Barberino Tavarnelle, nella quiete di Sambuca Val di Pesa: lontano dalla confusione e dal traffico, ma vicino a tutte le comodità.",
+    "facts": [
+      { "value": "25 km", "label": "da Firenze" },
+      { "value": "25 km", "label": "da Siena" },
+      { "value": "450 m", "label": "di altitudine" },
+      { "value": "500 m", "label": "dalle piscine" }
+    ],
+    "travel": [
+      { "icon": "car", "text": "In auto: raccordo Firenze–Siena, uscita Tavarnelle" },
+      { "icon": "plane", "text": "In aereo: aeroporti di Firenze e di Pisa" },
+      { "icon": "train", "text": "In treno: stazioni di Firenze Santa Maria Novella e di Siena" }
+    ],
+    "address_note": "L’indirizzo esatto viene comunicato al momento della prenotazione.",
+    "map_cta": "Apri in Google Maps",
+    "map_alt": "Mappa illustrata del Chianti tra Firenze e Siena, con la posizione di A spasso con Daisy a Sambuca Val di Pesa"
+  },
+  "booking": {
+    "kicker": "Prenota",
+    "title": "Verifica la disponibilità",
+    "intro": "Il calendario online è in arrivo. Nel frattempo inviateci la vostra richiesta: Vi risponderemo al più presto.",
+    "form": {
+      "checkin": "Arrivo",
+      "checkout": "Partenza",
+      "guests": "Ospiti",
+      "apartment": "Appartamento",
+      "apartment_options": ["Indifferente", "Il Bilocale", "Il Monolocale"],
+      "stay": "Tipo di soggiorno",
+      "stay_options": ["Vacanza", "Smartworking: settimana corta", "Smartworking: giornaliero"],
+      "dog": "Viaggio con il mio cane",
+      "dog_details": "Nome e taglia del cane",
+      "dog_placeholder": "Es. Daisy, 7 kg",
+      "name": "Nome e cognome",
+      "message": "Messaggio",
+      "message_placeholder": "Esperienze che vi interessano, orario di arrivo, richieste particolari…",
+      "send_whatsapp": "Invia su WhatsApp",
+      "send_email": "Invia per email",
+      "privacy": "Questo sito non salva alcun dato: il messaggio si apre già compilato nella vostra app WhatsApp o di posta.",
+      "error_dates": "La data di partenza deve essere successiva a quella di arrivo.",
+      "msg_greeting": "Buongiorno! Vorrei verificare la disponibilità per A spasso con Daisy · Chianti Home.",
+      "msg_yes": "Sì",
+      "msg_no": "No",
+      "msg_subject": "Richiesta di disponibilità"
+    },
+    "calendar_title": "Calendario e disponibilità",
+    "calendar_text": "Presto potrete vedere qui le date libere e prenotare anche su Airbnb.",
+    "calendar_badge": "In arrivo",
+    "contacts_title": "Contatti",
+    "cancellation": {
+      "title": "Politica di cancellazione",
+      "items": [
+        "Da 15 a 9 giorni prima dell’arrivo: penale del 30%",
+        "Da 8 giorni a 72 ore prima dell’arrivo: penale del 50%",
+        "Nelle 72 ore precedenti l’arrivo: penale del 100%"
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Abbi cura di splendere",
+    "rights": "Tutti i diritti riservati.",
+    "photos_credit": "Foto del territorio da Unsplash",
+    "illustrations_credit": "Illustrazioni originali"
+  }
+}

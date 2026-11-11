@@ -1,0 +1,608 @@
+{
+  "lang": "en",
+  "locale": "en_GB",
+  "lang_name": "English",
+  "meta": {
+    "title": "A spasso con Daisy · Chianti Home — Dog-friendly apartments in Chianti",
+    "description": "Two apartments in the heart of Chianti Classico, 25 km from Florence and Siena. Pools, sauna, Tuscan breakfast, olive oil and wine tastings. Small dogs welcome.",
+    "og_image_alt": "A spasso con Daisy, Chianti Home logo"
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu",
+    "lang_label": "Language",
+    "photo_soon": "Photo coming soon",
+    "on_request": "By reservation",
+    "draft": "To be confirmed",
+    "back_top": "Back to top",
+    "new_tab": "(opens in a new tab)",
+    "preview_note": "Site preview: photos and details coming soon"
+  },
+  "nav": [
+    {
+      "href": "#apartments",
+      "label": "Apartments"
+    },
+    {
+      "href": "#dogs",
+      "label": "Dog-friendly"
+    },
+    {
+      "href": "#territory",
+      "label": "The area"
+    },
+    {
+      "href": "#included",
+      "label": "Amenities"
+    },
+    {
+      "href": "#experiences",
+      "label": "Experiences"
+    },
+    {
+      "href": "#smartworking",
+      "label": "Remote working"
+    },
+    {
+      "href": "#location",
+      "label": "Location"
+    }
+  ],
+  "nav_cta": "Book",
+  "hero": {
+    "kicker": "Chianti Classico · Tuscany",
+    "logo_alt": "A spasso con Daisy — Chianti Home",
+    "tagline": "Two apartments in the heart of Chianti Classico, where even the smallest four-legged guests are made to feel at home.",
+    "facts": [
+      {
+        "icon": "pin",
+        "text": "25 km from Florence and Siena"
+      },
+      {
+        "icon": "paw",
+        "text": "Small dogs welcome"
+      },
+      {
+        "icon": "pool",
+        "text": "Pools nestled in greenery"
+      }
+    ],
+    "cta_primary": "Check availability",
+    "cta_secondary": "Discover the house",
+    "scroll": "Scroll",
+    "illustration_alt": "The Chianti hills by night, with cypresses, vineyards and a lamplit farmhouse"
+  },
+  "welcome": {
+    "kicker": "Welcome",
+    "title": "An oasis of traditions, tales and ancient flavours",
+    "poem": [
+      "Joyful bells herald a feast day, while flowers perfume the air;",
+      "ancient stone houses, like dots upon the horizon, people the land;",
+      "the stream runs calm through cool woods, cypresses and gentle hills.",
+      "An oasis stands ready to welcome weary travellers, woven of traditions and tales, of ancient flavours:",
+      "Chianti."
+    ],
+    "paragraphs": [
+      "We look forward to welcoming you into warm, homely surroundings, built in keeping with Tuscan tradition, just twenty-five kilometres from both Florence and Siena.",
+      "You will discover intimate spaces – modest in size, yet with room enough for a wonderful holiday, be it short or long. Furnished in a classic yet welcoming style and equipped with every comfort, they will make your stay quite unlike any other."
+    ],
+    "highlights": [
+      {
+        "icon": "kitchen",
+        "title": "Kitchenette",
+        "text": "Fitted with modern appliances, for enjoying traditional Tuscan cooking and tasting the local produce."
+      },
+      {
+        "icon": "pool",
+        "title": "Pools and whirlpool",
+        "text": "When the summer sun floods our land with light, the pool and whirlpool restore body and mind."
+      },
+      {
+        "icon": "fireplace",
+        "title": "Fireplace",
+        "text": "The flickering fire keeps winter warm; should you prefer, there is gas central heating too."
+      },
+      {
+        "icon": "steam",
+        "title": "Wellbeing at home",
+        "text": "A hydromassage shower, steam bath and infrared sauna to help you find your balance again."
+      }
+    ]
+  },
+  "apartments": {
+    "kicker": "The spaces",
+    "title": "Two apartments, one spirit",
+    "intro": "Intimate, light-filled rooms furnished in classic style, where paintings, sculpture, ceramics and photographs tell the story of Tuscany in displays that change with every season.",
+    "units": [
+      {
+        "id": "bilocale",
+        "name": "Il Bilocale",
+        "tagline": "A one-bedroom apartment, with a fireplace in the sitting room and a separate double bedroom",
+        "text": "The warmth of a fire in the sitting room, a double bedroom all your own and a kitchenette for discovering the flavours of Chianti. Ideal for couples and small families.",
+        "illustration": "apt-bilocale.svg",
+        "illustration_alt": "Illustration of the sitting room in Il Bilocale, with exposed beams, a fireplace and the bedroom",
+        "facts": [
+          {
+            "icon": "guests",
+            "text": "Up to 4 guests"
+          },
+          {
+            "icon": "bed",
+            "text": "Double bedroom"
+          },
+          {
+            "icon": "fireplace",
+            "text": "Fireplace"
+          },
+          {
+            "icon": "kitchen",
+            "text": "Kitchenette"
+          }
+        ]
+      },
+      {
+        "id": "monolocale",
+        "name": "Il Monolocale",
+        "tagline": "An intimate open-plan studio, designed for two",
+        "text": "A single, cosy room with a double bed and kitchenette – perfect for a romantic escape or a few days of remote working surrounded by greenery.",
+        "illustration": "apt-monolocale.svg",
+        "illustration_alt": "Illustration of Il Monolocale, with a double bed, kitchenette and a window looking out over the hills",
+        "facts": [
+          {
+            "icon": "guests",
+            "text": "2 guests"
+          },
+          {
+            "icon": "bed",
+            "text": "Double bed"
+          },
+          {
+            "icon": "kitchen",
+            "text": "Kitchenette"
+          },
+          {
+            "icon": "desk",
+            "text": "Desk and Wi-Fi"
+          }
+        ]
+      }
+    ]
+  },
+  "dogs": {
+    "kicker": "Four-legged friends",
+    "title": "Here, small dogs are guests of honour",
+    "text": "Daisy is waiting to take you out for a walk through her favourite places: the park just below the house, the woodland paths, the white gravel roads that wind between vines and olive trees. Every small dog is welcome, and will find a little gift waiting just for them.",
+    "items": [
+      {
+        "icon": "paw",
+        "text": "A special welcome for your four-legged friend"
+      },
+      {
+        "icon": "dog-grooming",
+        "text": "Dog grooming at the apartment, by appointment"
+      },
+      {
+        "icon": "leaf",
+        "text": "Walks in the Abbot’s Park (Parco dell’Abate) and the woods around the house"
+      },
+      {
+        "icon": "river",
+        "text": "A walking and cycling path along the Pesa"
+      }
+    ],
+    "note": "We welcome small dogs: do write to us about anything your travelling companion may need.",
+    "illustration_alt": "Illustration of Daisy trotting along a white gravel road between cypress trees"
+  },
+  "territory": {
+    "kicker": "Chianti all around you",
+    "title": "Hills, vineyards and timeless villages",
+    "intro": "To leave the stresses of everyday life behind, you need only discover the enchanting places around us: hills clothed in vineyards that give rise to great wines, dotted with centuries-old olive trees whose oil is prized the world over. From the greenery rise fortified hamlets, little villages and castles, rich in culture and in traditions that reach back over a thousand years.",
+    "places": [
+      {
+        "icon": "bones",
+        "title": "The park of the mastodons",
+        "text": "Just below the house lies the park where, some 2.5 million years ago, the mastodons of Sambuca roamed – elephant-like giants whose presence is attested by a palate with two molars, now kept in a museum. It is one of the most important natural sites in Chianti, with heirloom plants and fruit trees and places to gather."
+      },
+      {
+        "icon": "river",
+        "title": "Along the River Pesa",
+        "text": "A route of great scenic beauty, where nature and spirituality meet, in the footsteps of Saint John Gualbert."
+      },
+      {
+        "icon": "church",
+        "title": "Badia a Passignano",
+        "text": "Saint John Gualbert, born near Tavarnelle in the late tenth century and founder of the Vallombrosan Order, lived and now rests in the Abbey of San Michele Arcangelo."
+      },
+      {
+        "icon": "castle",
+        "title": "Villages and castles",
+        "text": "Fortified villages and castles rising from the greenery, guardians of art, history and age-old traditions."
+      }
+    ],
+    "quote": "Immerse yourself in the beauty of the past, and carry it into your future.",
+    "signature": "Abbi cura di splendere"
+  },
+  "services": {
+    "kicker": "At your service",
+    "title": "The heart of Chianti Classico, up close",
+    "intro": "In this corner of Chianti you will feel at home, with the privilege of activities and services reserved for the most discerning guests.",
+    "blocks": [
+      {
+        "icon": "art",
+        "photo": "",
+        "title": "Art that changes with the seasons",
+        "text": "In tribute to the artistic treasures of Florence, the rooms of A spasso con Daisy are home to paintings, sculpture, ceramics and photographs, in displays renewed with every season."
+      },
+      {
+        "icon": "olive",
+        "photo": "olives",
+        "title": "Among the olive trees",
+        "text": "Sun-kissed hills 450 metres above sea level: a land made special by the fruit it bears. We will walk with you among the trees that teach the art of patience, up to the dense canopy where the olives hide, and you will discover how daily care turns into colour, flavour and fragrance."
+      },
+      {
+        "icon": "grapes",
+        "photo": "vineyard",
+        "title": "In the vineyards and the cellar",
+        "text": "If you wish, you can walk among the vines and see how the soil changes with the wine it yields. In a small cellar – a temple of ancient rituals and modern technology – past, present and future live in harmony."
+      },
+      {
+        "icon": "bread",
+        "photo": "bread",
+        "title": "Bread from ancient grains",
+        "text": "Our chef will teach you to bake bread with our own organic flours, milled from ancient grains. At the end of the lesson you will savour the treats you have made, fresh from the oven, with a good local craft beer."
+      },
+      {
+        "icon": "horse",
+        "photo": "horse",
+        "title": "Days on horseback",
+        "text": "Magnificent horses can make your days with us truly special, with rides, lessons and moments of genuine connection."
+      }
+    ]
+  },
+  "included": {
+    "kicker": "All for you",
+    "title": "Everything included in your stay",
+    "intro": "The nightly rate is for single or double occupancy and includes:",
+    "items": [
+      {
+        "icon": "glass",
+        "text": "Welcome drink"
+      },
+      {
+        "icon": "paw",
+        "text": "A welcome treat for our four-legged friends"
+      },
+      {
+        "icon": "breakfast",
+        "text": "Breakfast of sweet and savoury local specialities: choose the day before and it will be delivered fresh to your door"
+      },
+      {
+        "icon": "bed",
+        "text": "Bed-making and bathroom cleaning, daily or weekly as you prefer"
+      },
+      {
+        "icon": "towel",
+        "text": "Weekly change of bath linen"
+      },
+      {
+        "icon": "shower",
+        "text": "Hydromassage shower and steam bath"
+      },
+      {
+        "icon": "sauna",
+        "text": "Infrared sauna"
+      },
+      {
+        "icon": "soap",
+        "text": "Bathroom toiletries made with Chianti PDO olive oil, essential oils and natural plant extracts – certified organic and never tested on animals"
+      },
+      {
+        "icon": "robe",
+        "text": "Bathrobes for two and bath slippers"
+      },
+      {
+        "icon": "hairdryer",
+        "text": "Hairdryer"
+      },
+      {
+        "icon": "desk",
+        "text": "Desk and Wi-Fi"
+      },
+      {
+        "icon": "tv",
+        "text": "Flat-screen TV with satellite channels"
+      },
+      {
+        "icon": "dishes",
+        "text": "Crockery and kitchenware"
+      },
+      {
+        "icon": "linen",
+        "text": "Bed linen"
+      },
+      {
+        "icon": "towel",
+        "text": "Pool towels"
+      },
+      {
+        "icon": "pool",
+        "text": "Adults’ pool, children’s pool and whirlpool, set in greenery 500 metres away, from May to the end of August"
+      }
+    ],
+    "extras": [
+      {
+        "icon": "extra-bed",
+        "text": "Third and fourth beds on request: €45 each, in addition to the rate"
+      },
+      {
+        "icon": "child",
+        "text": "Children up to 10 stay free"
+      }
+    ]
+  },
+  "smartworking": {
+    "kicker": "Remote working",
+    "title": "Work well, with all the privileges of a holiday",
+    "intro": "Far from the bustle and the traffic, yet close to every convenience: here your work will be sustained by good food, peace and quiet, and the open air.",
+    "formulas": [
+      {
+        "icon": "calendar",
+        "title": "Short week",
+        "text": "Monday to Friday"
+      },
+      {
+        "icon": "clock",
+        "title": "By the day",
+        "text": "Booked in advance, check-in from 9am to 7pm"
+      }
+    ],
+    "includes_title": "Your working day includes",
+    "items": [
+      {
+        "icon": "coffee",
+        "text": "Buffet breakfast"
+      },
+      {
+        "icon": "wifi",
+        "text": "Wi-Fi in the apartments and by the pool"
+      },
+      {
+        "icon": "printer",
+        "text": "Free printing, up to 50 pages"
+      },
+      {
+        "icon": "pool",
+        "text": "Access to the pools, and walks in the Abbot’s Park and the woods"
+      },
+      {
+        "icon": "pot",
+        "text": "Lunch delivered on request, or use of the kitchen"
+      },
+      {
+        "icon": "tv",
+        "text": "Flat-screen TV with satellite channels"
+      },
+      {
+        "icon": "linen",
+        "text": "Crockery and linen"
+      },
+      {
+        "icon": "sparkle",
+        "text": "Cleaning and sanitising at the end of the day"
+      }
+    ]
+  },
+  "experiences": {
+    "kicker": "Choose your experience",
+    "title": "Tailor-made experiences",
+    "badge": "By reservation only",
+    "intro": "On request, we arrange specialist-guided tours of the area’s beauty and its food and wine heritage, as well as itineraries that weave together art, history, landscape and gentle exercise.",
+    "groups": [
+      {
+        "title": "Flavours",
+        "items": [
+          {
+            "icon": "olive",
+            "title": "Olive oil",
+            "text": "A visit to the olive groves and the oil mill, with tasting"
+          },
+          {
+            "icon": "grapes",
+            "title": "Wine",
+            "text": "A visit to the vineyards and the cellar, with tasting"
+          },
+          {
+            "icon": "bread",
+            "title": "Bread-making class",
+            "text": "Traditional bread from ancient grains: about two and a half hours, followed by a tasting and craft beer"
+          },
+          {
+            "icon": "pot",
+            "title": "Cooking experience",
+            "text": "A cookery class and dinner in your apartment, to be booked three days ahead: Tuscan menus and more, from land and sea, lasagne and homemade pasta"
+          },
+          {
+            "icon": "chef",
+            "title": "Personal chef",
+            "text": "A chef all your own, in your apartment"
+          },
+          {
+            "icon": "table",
+            "title": "Social dining",
+            "text": "The conviviality of the Tuscan table, in good company"
+          }
+        ]
+      },
+      {
+        "title": "Nature and sport",
+        "items": [
+          {
+            "icon": "horse",
+            "title": "Horse rides",
+            "text": "Through woods, vineyards and white gravel roads"
+          },
+          {
+            "icon": "horseshoe",
+            "title": "Classical riding",
+            "text": "Lessons for beginners and experienced riders"
+          },
+          {
+            "icon": "bike",
+            "title": "By bike",
+            "text": "Along the Pesa on the cycle path from Sambuca to Cerbaia: easy and suitable for children too. More challenging routes tailored to you"
+          },
+          {
+            "icon": "fishing",
+            "title": "Fishing",
+            "text": "At a man-made lake"
+          },
+          {
+            "icon": "padel",
+            "title": "Padel",
+            "text": "Courts available to book"
+          },
+          {
+            "icon": "trainer",
+            "title": "Personal trainer",
+            "text": "Tailored workouts, in your apartment"
+          }
+        ]
+      },
+      {
+        "title": "Wellbeing",
+        "items": [
+          {
+            "icon": "massage",
+            "title": "Massage",
+            "text": "Relaxing and personalised treatments"
+          },
+          {
+            "icon": "meditation",
+            "title": "Meditation",
+            "text": "Meditation and breathwork"
+          },
+          {
+            "icon": "horse-heart",
+            "title": "Channelling with horses",
+            "text": "A profound encounter with horses"
+          },
+          {
+            "icon": "dog-grooming",
+            "title": "Dog grooming",
+            "text": "Daisy and her friends deserve a little pampering too – right at the apartment"
+          }
+        ]
+      },
+      {
+        "title": "Art and discovery",
+        "items": [
+          {
+            "icon": "guide",
+            "title": "Guided tours",
+            "text": "Art, history, food and wine, with a specialist guide"
+          },
+          {
+            "icon": "camera",
+            "title": "Photography",
+            "text": "Courses, workshops and photo shoots"
+          }
+        ]
+      }
+    ]
+  },
+  "location": {
+    "kicker": "Where to find us",
+    "title": "In the heart of Chianti Classico",
+    "text": "You will find us in Barberino Tavarnelle, in the quiet of Sambuca Val di Pesa: far from the bustle and the traffic, yet close to every convenience.",
+    "facts": [
+      {
+        "value": "25 km",
+        "label": "from Florence"
+      },
+      {
+        "value": "25 km",
+        "label": "from Siena"
+      },
+      {
+        "value": "450 m",
+        "label": "above sea level"
+      },
+      {
+        "value": "500 m",
+        "label": "from the pools"
+      }
+    ],
+    "travel": [
+      {
+        "icon": "car",
+        "text": "By car: Florence–Siena motorway (raccordo), Tavarnelle exit"
+      },
+      {
+        "icon": "plane",
+        "text": "By air: Florence and Pisa airports"
+      },
+      {
+        "icon": "train",
+        "text": "By train: Firenze Santa Maria Novella and Siena stations"
+      }
+    ],
+    "address_note": "The exact address will be shared when you book.",
+    "map_cta": "Open in Google Maps",
+    "map_alt": "Illustrated map of Chianti between Florence and Siena, showing where A spasso con Daisy lies in Sambuca Val di Pesa"
+  },
+  "booking": {
+    "kicker": "Book",
+    "title": "Check availability",
+    "intro": "Our online calendar is coming soon. In the meantime, send us your request and we will reply as soon as we can.",
+    "form": {
+      "checkin": "Arrival",
+      "checkout": "Departure",
+      "guests": "Guests",
+      "apartment": "Apartment",
+      "apartment_options": [
+        "No preference",
+        "Il Bilocale",
+        "Il Monolocale"
+      ],
+      "stay": "Type of stay",
+      "stay_options": [
+        "Holiday",
+        "Remote working: short week",
+        "Remote working: by the day"
+      ],
+      "dog": "I’m travelling with my dog",
+      "dog_details": "Dog’s name and size",
+      "dog_placeholder": "e.g. Daisy, 7 kg",
+      "name": "Full name",
+      "message": "Message",
+      "message_placeholder": "Experiences you’d like, arrival time, any special requests…",
+      "send_whatsapp": "Send via WhatsApp",
+      "send_email": "Send by email",
+      "privacy": "This site stores no data: your message simply opens, ready to send, in your WhatsApp or email app.",
+      "error_dates": "The departure date must be after the arrival date.",
+      "msg_greeting": "Hello! I’d like to check availability at A spasso con Daisy · Chianti Home.",
+      "msg_yes": "Yes",
+      "msg_no": "No",
+      "msg_subject": "Availability enquiry"
+    },
+    "calendar_title": "Calendar and availability",
+    "calendar_text": "Soon you’ll be able to see available dates here, and book on Airbnb too.",
+    "calendar_badge": "Coming soon",
+    "contacts_title": "Contact",
+    "cancellation": {
+      "title": "Cancellation policy",
+      "items": [
+        "15 to 9 days before arrival: 30% cancellation fee",
+        "8 days to 72 hours before arrival: 50% cancellation fee",
+        "Within 72 hours of arrival: 100% cancellation fee"
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Abbi cura di splendere",
+    "rights": "All rights reserved.",
+    "photos_credit": "Photos of the area from Unsplash",
+    "illustrations_credit": "Original illustrations"
+  }
+}

@@ -1,0 +1,608 @@
+{
+  "lang": "de",
+  "locale": "de_DE",
+  "lang_name": "Deutsch",
+  "meta": {
+    "title": "A spasso con Daisy · Chianti Home — Ferienwohnungen mit Hund · Toskana",
+    "description": "Zwei Ferienwohnungen im Chianti Classico, 25 km von Florenz und Siena. Pool, Sauna, toskanisches Frühstück, Reben und Olivenhaine. Kleine Hunde willkommen.",
+    "og_image_alt": "Logo von A spasso con Daisy, Chianti Home"
+  },
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "menu_open": "Menü öffnen",
+    "menu_close": "Menü schließen",
+    "lang_label": "Sprache",
+    "photo_soon": "Foto folgt in Kürze",
+    "on_request": "Nach Vereinbarung",
+    "draft": "Noch zu bestätigen",
+    "back_top": "Nach oben",
+    "new_tab": "(öffnet in einem neuen Tab)",
+    "preview_note": "Vorschau der Website: Fotos und Details folgen in Kürze"
+  },
+  "nav": [
+    {
+      "href": "#apartments",
+      "label": "Wohnungen"
+    },
+    {
+      "href": "#dogs",
+      "label": "Vierbeiner"
+    },
+    {
+      "href": "#territory",
+      "label": "Region"
+    },
+    {
+      "href": "#included",
+      "label": "Leistungen"
+    },
+    {
+      "href": "#experiences",
+      "label": "Erlebnisse"
+    },
+    {
+      "href": "#smartworking",
+      "label": "Smartworking"
+    },
+    {
+      "href": "#location",
+      "label": "Lage"
+    }
+  ],
+  "nav_cta": "Buchen",
+  "hero": {
+    "kicker": "Chianti Classico · Toskana",
+    "logo_alt": "A spasso con Daisy — Chianti Home",
+    "tagline": "Zwei Ferienwohnungen im Herzen des Chianti Classico – wo auch kleine Vierbeiner zu Hause sind.",
+    "facts": [
+      {
+        "icon": "pin",
+        "text": "25 km von Florenz und Siena"
+      },
+      {
+        "icon": "paw",
+        "text": "Kleine Hunde willkommen"
+      },
+      {
+        "icon": "pool",
+        "text": "Pools im Grünen"
+      }
+    ],
+    "cta_primary": "Verfügbarkeit prüfen",
+    "cta_secondary": "Das Haus entdecken",
+    "scroll": "Scrollen",
+    "illustration_alt": "Die Hügel des Chianti bei Nacht, mit Zypressen, Weinbergen und einem erleuchteten Landhaus"
+  },
+  "welcome": {
+    "kicker": "Willkommen",
+    "title": "Eine Oase aus Traditionen, Geschichten und Aromen von einst",
+    "poem": [
+      "Frohe Glocken verkünden den Festtag, während Blumen die Luft mit Duft erfüllen;",
+      "uralte Häuser aus Stein, wie Tupfen am Horizont, bewohnen das Land;",
+      "still fließt der Bach durch kühle Wälder, vorbei an Zypressen und sanften Hügeln.",
+      "Eine Oase steht bereit, müde Reisende zu empfangen – gewoben aus Traditionen und Geschichten, aus Aromen von einst:",
+      "das Chianti."
+    ],
+    "paragraphs": [
+      "Wir freuen uns darauf, Sie in Räumen von familiärer Behaglichkeit zu empfangen, die im Einklang mit der toskanischen Bautradition errichtet wurden – nur fünfundzwanzig Kilometer von Florenz und Siena entfernt.",
+      "Sie entdecken kleine, intime Refugien, die dennoch Raum für große Ferien lassen – ob kurz oder lang. Klassisch und doch gemütlich eingerichtet, mit allem Komfort ausgestattet, machen sie Ihren Aufenthalt zu etwas Einzigartigem."
+    ],
+    "highlights": [
+      {
+        "icon": "kitchen",
+        "title": "Kochnische",
+        "text": "Mit modernen Geräten ausgestattet, damit Sie die typisch toskanische Küche genießen und die Erzeugnisse der Region kosten können."
+      },
+      {
+        "icon": "pool",
+        "title": "Pools und Whirlpool",
+        "text": "Wenn im Sommer die Sonne unser Land in Licht taucht, schenken Pool und Whirlpool Körper und Geist neue Kraft."
+      },
+      {
+        "icon": "fireplace",
+        "title": "Kamin",
+        "text": "Das knisternde Kaminfeuer macht den Winter behaglich; alternativ sorgt eine Gasheizung für wohlige Wärme."
+      },
+      {
+        "icon": "steam",
+        "title": "Wellness im Haus",
+        "text": "Massagedusche, Dampfbad und Infrarotsauna – um wieder ganz zu sich zu finden."
+      }
+    ]
+  },
+  "apartments": {
+    "kicker": "Die Räume",
+    "title": "Zwei Wohnungen, eine Atmosphäre",
+    "intro": "Behagliche, lichtdurchflutete Räume im klassischen Stil, in denen Gemälde, Skulpturen, Keramiken und Fotografien von der Toskana erzählen – in wechselnden Arrangements, die sich mit jeder Saison wandeln.",
+    "units": [
+      {
+        "id": "bilocale",
+        "name": "Il Bilocale",
+        "tagline": "Zweizimmerwohnung mit Kamin im Wohnraum und separatem Schlafzimmer",
+        "text": "Die Wärme des Kaminfeuers im Wohnraum, ein Schlafzimmer mit Doppelbett ganz für Sie allein und eine Kochnische, um die Aromen des Chianti zu entdecken. Ideal für Paare und kleine Familien.",
+        "illustration": "apt-bilocale.svg",
+        "illustration_alt": "Illustration des Wohnraums der Zweizimmerwohnung mit sichtbaren Holzbalken, Kamin und Schlafzimmer",
+        "facts": [
+          {
+            "icon": "guests",
+            "text": "Bis zu 4 Gäste"
+          },
+          {
+            "icon": "bed",
+            "text": "Schlafzimmer mit Doppelbett"
+          },
+          {
+            "icon": "fireplace",
+            "text": "Kamin"
+          },
+          {
+            "icon": "kitchen",
+            "text": "Kochnische"
+          }
+        ]
+      },
+      {
+        "id": "monolocale",
+        "name": "Il Monolocale",
+        "tagline": "Ein intimes, offenes Studio – wie geschaffen für zwei",
+        "text": "Ein einziger, behaglicher Raum mit Doppelbett und Kochnische – perfekt für eine romantische Auszeit oder ein paar Tage Smartworking im Grünen.",
+        "illustration": "apt-monolocale.svg",
+        "illustration_alt": "Illustration des Studios mit Doppelbett, Kochnische und einem Fenster mit Blick auf die Hügel",
+        "facts": [
+          {
+            "icon": "guests",
+            "text": "2 Gäste"
+          },
+          {
+            "icon": "bed",
+            "text": "Doppelbett"
+          },
+          {
+            "icon": "kitchen",
+            "text": "Kochnische"
+          },
+          {
+            "icon": "desk",
+            "text": "Schreibtisch und WLAN"
+          }
+        ]
+      }
+    ]
+  },
+  "dogs": {
+    "kicker": "Freunde auf vier Pfoten",
+    "title": "Hier sind kleine Hunde Ehrengäste",
+    "text": "Daisy kann es kaum erwarten, mit Ihnen zu ihren Lieblingsplätzen spazieren zu gehen: in den Park direkt vor der Haustür, auf die Pfade im Wald, über die weißen Schotterwege zwischen Reben und Olivenbäumen. Alle kleinen Hunde sind herzlich willkommen – und eine liebevolle Aufmerksamkeit wartet bereits auf sie.",
+    "items": [
+      {
+        "icon": "paw",
+        "text": "Ein eigenes Willkommensgeschenk für Ihren Vierbeiner"
+      },
+      {
+        "icon": "dog-grooming",
+        "text": "Hundepflege direkt im Haus, nach Vereinbarung"
+      },
+      {
+        "icon": "leaf",
+        "text": "Spaziergänge im Park des Abtes (Parco dell’Abate) und im Wald rund ums Haus"
+      },
+      {
+        "icon": "river",
+        "text": "Rad- und Fußweg entlang der Pesa"
+      }
+    ],
+    "note": "Wir nehmen gern kleine Hunde auf: Schreiben Sie uns einfach, was Ihr Reisebegleiter auf vier Pfoten braucht.",
+    "illustration_alt": "Illustration von Daisy bei einem Spaziergang auf einem weißen Schotterweg zwischen Zypressen"
+  },
+  "territory": {
+    "kicker": "Das Chianti vor Ihrer Tür",
+    "title": "Hügel, Weinberge und zeitlose Dörfer",
+    "intro": "Um den Stress des Alltags hinter sich zu lassen, genügt es, die bezaubernden Orte ringsum zu entdecken: Hügel voller Weinberge, aus denen große Weine hervorgehen, gesprenkelt mit jahrhundertealten Olivenbäumen, deren Öl weit über die Region hinaus geschätzt wird. Aus dem Grün erheben sich befestigte Dörfer, kleine Ortschaften und Burgen – reich an Kultur und jahrtausendealten Traditionen.",
+    "places": [
+      {
+        "icon": "bones",
+        "title": "Der Park der Mastodonten",
+        "text": "Nur wenige Schritte vom Haus entfernt liegt der Park, in dem vor rund 2,5 Millionen Jahren die Mastodonten von Sambuca lebten – elefantenähnliche Dickhäuter. Davon zeugt ein fossiler Gaumen mit zwei Backenzähnen, der heute in einem Museum aufbewahrt wird. Einer der naturkundlich bedeutendsten Orte des Chianti – mit Pflanzen und Früchten der Tradition sowie Plätzen der Begegnung."
+      },
+      {
+        "icon": "river",
+        "title": "Entlang der Pesa",
+        "text": "Ein landschaftlich besonders reizvoller Weg, auf dem sich Natur und Spiritualität verbinden – auf den Spuren des heiligen Johannes Gualbertus."
+      },
+      {
+        "icon": "church",
+        "title": "Badia a Passignano",
+        "text": "Der heilige Johannes Gualbertus, Ende des 10. Jahrhunderts in der Nähe von Tavarnelle geboren und Gründer der Vallombrosaner-Kongregation, lebte in der Abtei San Michele Arcangelo und ruht dort bis heute."
+      },
+      {
+        "icon": "castle",
+        "title": "Dörfer und Burgen",
+        "text": "Befestigte Ortschaften und Burgen, die sich aus dem Grün erheben – Hüter von Kunst, Geschichte und jahrtausendealten Traditionen."
+      }
+    ],
+    "quote": "Tauchen Sie ein in die Schönheit des Vergangenen – für Ihre Zukunft.",
+    "signature": "Abbi cura di splendere"
+  },
+  "services": {
+    "kicker": "Zu Ihren Diensten",
+    "title": "Das Herz des Chianti Classico, aus nächster Nähe erlebt",
+    "intro": "In diesen Winkeln des Chianti fühlen Sie sich wie zu Hause – und genießen das Privileg von Erlebnissen und Leistungen, wie sie anspruchsvollen Gästen vorbehalten sind.",
+    "blocks": [
+      {
+        "icon": "art",
+        "photo": "",
+        "title": "Kunst im Wandel der Jahreszeiten",
+        "text": "Als Hommage an die Kunstschätze von Florenz zeigen die Räume von A spasso con Daisy Gemälde, Skulpturen, Keramiken und Fotografien – in Ausstellungen, die zu jeder Reisesaison neu gestaltet werden."
+      },
+      {
+        "icon": "olive",
+        "photo": "olives",
+        "title": "Zwischen den Olivenbäumen",
+        "text": "Sonnengeküsste Hügel auf 450 Metern Höhe, ein Land, das ganz besondere Früchte schenkt. Wir begleiten Sie zu Bäumen, von denen man die Kunst der Geduld lernt, bis hinauf in ihre dichten Kronen, in denen sich die Oliven verbergen: Sie werden erleben, wie aus täglicher Hingabe Farbe, Geschmack und Duft entstehen."
+      },
+      {
+        "icon": "grapes",
+        "photo": "vineyard",
+        "title": "In den Weinbergen und im Keller",
+        "text": "Wenn Sie mögen, spazieren Sie durch die Weinberge und sehen, wie sich der Boden je nach dem Wein verändert, den er hervorbringt. In einem kleinen Weinkeller, einem Tempel uralter Riten und moderner Technik, leben Vergangenheit, Gegenwart und Zukunft in harmonischem Einklang."
+      },
+      {
+        "icon": "bread",
+        "photo": "bread",
+        "title": "Brot aus alten Getreidesorten",
+        "text": "Unsere Köchin zeigt Ihnen, wie man mit unserem Bio-Mehl aus alten Getreidesorten Brot backt. Zum Abschluss genießen Sie die ofenfrischen Köstlichkeiten, die Sie selbst zubereitet haben, zu einem guten Craft-Bier aus der Region."
+      },
+      {
+        "icon": "horse",
+        "photo": "horse",
+        "title": "Tage im Sattel",
+        "text": "Herrliche Pferde machen Ihre Tage bei uns zu etwas ganz Besonderem: mit Ausritten, Reitstunden und Momenten echter Verbundenheit."
+      }
+    ]
+  },
+  "included": {
+    "kicker": "Wir für Sie",
+    "title": "Alles, was Ihr Aufenthalt umfasst",
+    "intro": "Der Tagespreis gilt für die Übernachtung bei Einzel- oder Doppelbelegung und beinhaltet:",
+    "items": [
+      {
+        "icon": "glass",
+        "text": "Willkommensdrink"
+      },
+      {
+        "icon": "paw",
+        "text": "Ein Willkommensgeschenk für unsere Freunde auf vier Pfoten"
+      },
+      {
+        "icon": "breakfast",
+        "text": "Frühstück mit süßen und herzhaften Spezialitäten der Region: Sie wählen am Vortag aus, wir bringen es Ihnen frisch an die Tür"
+      },
+      {
+        "icon": "bed",
+        "text": "Bettenmachen und Badreinigung, wahlweise täglich oder wöchentlich"
+      },
+      {
+        "icon": "towel",
+        "text": "Wöchentlicher Handtuchwechsel"
+      },
+      {
+        "icon": "shower",
+        "text": "Massagedusche und Dampfbad"
+      },
+      {
+        "icon": "sauna",
+        "text": "Infrarotsauna"
+      },
+      {
+        "icon": "soap",
+        "text": "Badkosmetik mit Chianti-Olivenöl g. U., ätherischen Ölen und natürlichen Pflanzenextrakten – zertifiziert biologisch und ohne Tierversuche"
+      },
+      {
+        "icon": "robe",
+        "text": "Bademäntel für zwei Personen und Badeslipper"
+      },
+      {
+        "icon": "hairdryer",
+        "text": "Haartrockner"
+      },
+      {
+        "icon": "desk",
+        "text": "Schreibtisch und WLAN"
+      },
+      {
+        "icon": "tv",
+        "text": "Flachbild-TV mit Satellitenempfang"
+      },
+      {
+        "icon": "dishes",
+        "text": "Geschirr"
+      },
+      {
+        "icon": "linen",
+        "text": "Bettwäsche"
+      },
+      {
+        "icon": "towel",
+        "text": "Badetücher für den Pool"
+      },
+      {
+        "icon": "pool",
+        "text": "Pool für Erwachsene, Kinderbecken und Whirlpool – mitten im Grünen, 500 Meter entfernt, von Mai bis Ende August"
+      }
+    ],
+    "extras": [
+      {
+        "icon": "extra-bed",
+        "text": "Drittes und viertes Bett auf Anfrage: je 45 € zusätzlich zum Tagespreis"
+      },
+      {
+        "icon": "child",
+        "text": "Kinder bis 10 Jahre kostenlos"
+      }
+    ]
+  },
+  "smartworking": {
+    "kicker": "Smartworking",
+    "title": "Gut arbeiten – mit allen Vorzügen eines Urlaubs",
+    "intro": "Fernab von Trubel und Verkehr und doch ganz nah an allen Annehmlichkeiten: Hier beflügeln gutes Essen, Ruhe und frische Luft Ihre Arbeit.",
+    "formulas": [
+      {
+        "icon": "calendar",
+        "title": "Fünf-Tage-Woche",
+        "text": "Von Montag bis Freitag"
+      },
+      {
+        "icon": "clock",
+        "title": "Tageweise",
+        "text": "Nach Voranmeldung, Check-in von 9 bis 19 Uhr"
+      }
+    ],
+    "includes_title": "Ihr Arbeitstag umfasst",
+    "items": [
+      {
+        "icon": "coffee",
+        "text": "Frühstücksbuffet"
+      },
+      {
+        "icon": "wifi",
+        "text": "WLAN in den Wohnungen und am Pool"
+      },
+      {
+        "icon": "printer",
+        "text": "Kostenloser Druck von bis zu 50 Seiten"
+      },
+      {
+        "icon": "pool",
+        "text": "Zugang zu den Pools, Spaziergang im Park des Abtes und im Wald"
+      },
+      {
+        "icon": "pot",
+        "text": "Auf Wunsch Mittagessen in der Wohnung – oder Sie nutzen die Küche"
+      },
+      {
+        "icon": "tv",
+        "text": "Flachbild-TV mit Satellitenempfang"
+      },
+      {
+        "icon": "linen",
+        "text": "Geschirr und Wäsche"
+      },
+      {
+        "icon": "sparkle",
+        "text": "Reinigung und Desinfektion zum Tagesabschluss"
+      }
+    ]
+  },
+  "experiences": {
+    "kicker": "Wählen Sie Ihr Erlebnis",
+    "title": "Maßgeschneiderte Erlebnisse",
+    "badge": "Nur nach Voranmeldung",
+    "intro": "Auf Wunsch organisieren wir Besichtigungen mit fachkundiger Führung, um die Schönheit der Orte und die Wein- und Genusskultur der Region zu erleben – oder Touren, die Kunst, Geschichte, Landschaft und sanfte Bewegung verbinden.",
+    "groups": [
+      {
+        "title": "Genuss",
+        "items": [
+          {
+            "icon": "olive",
+            "title": "Olivenöl",
+            "text": "Besuch der Olivenhaine und der Ölmühle, mit Verkostung"
+          },
+          {
+            "icon": "grapes",
+            "title": "Wein",
+            "text": "Besuch der Weinberge und des Weinkellers, mit Verkostung"
+          },
+          {
+            "icon": "bread",
+            "title": "Brotbackkurs",
+            "text": "Traditionelles Brot aus alten Getreidesorten: rund zweieinhalb Stunden, danach Verkostung mit Craft-Bier"
+          },
+          {
+            "icon": "pot",
+            "title": "Cooking Experience",
+            "text": "Kochkurs und Abendessen in Ihrer Wohnung, drei Tage im Voraus zu buchen: toskanische Menüs und vieles mehr, mit Fleisch und Fisch, Lasagne und hausgemachter Pasta"
+          },
+          {
+            "icon": "chef",
+            "title": "Personal Chef",
+            "text": "Ein Koch ganz für Sie allein, in Ihrer Wohnung"
+          },
+          {
+            "icon": "table",
+            "title": "Gemeinsam tafeln",
+            "text": "Die Geselligkeit der toskanischen Tafel, in fröhlicher Runde"
+          }
+        ]
+      },
+      {
+        "title": "Natur und Sport",
+        "items": [
+          {
+            "icon": "horse",
+            "title": "Ausritte",
+            "text": "Durch Wälder und Weinberge, über weiße Schotterwege"
+          },
+          {
+            "icon": "horseshoe",
+            "title": "Klassische Reitkunst",
+            "text": "Reitstunden für Einsteiger und Erfahrene"
+          },
+          {
+            "icon": "bike",
+            "title": "Mit dem Rad",
+            "text": "Entlang der Pesa auf dem Radweg von Sambuca nach Cerbaia: leicht und auch für Kinder geeignet. Anspruchsvollere Touren nach Maß"
+          },
+          {
+            "icon": "fishing",
+            "title": "Angeln",
+            "text": "An einem künstlich angelegten See"
+          },
+          {
+            "icon": "padel",
+            "title": "Padel",
+            "text": "Plätze mit Reservierung"
+          },
+          {
+            "icon": "trainer",
+            "title": "Personal Trainer",
+            "text": "Individuelles Training, direkt vor Ort"
+          }
+        ]
+      },
+      {
+        "title": "Wohlbefinden",
+        "items": [
+          {
+            "icon": "massage",
+            "title": "Massagen",
+            "text": "Entspannung und individuelle Anwendungen"
+          },
+          {
+            "icon": "meditation",
+            "title": "Meditation",
+            "text": "Meditation und bewusstes Atmen"
+          },
+          {
+            "icon": "horse-heart",
+            "title": "Channeling mit Pferden",
+            "text": "Eine tiefe Begegnung mit den Pferden"
+          },
+          {
+            "icon": "dog-grooming",
+            "title": "Hundepflege",
+            "text": "Auch Daisy und ihre Freunde haben eine Streicheleinheit verdient – direkt im Haus"
+          }
+        ]
+      },
+      {
+        "title": "Kunst und Entdeckungen",
+        "items": [
+          {
+            "icon": "guide",
+            "title": "Führungen",
+            "text": "Kunst, Geschichte, Wein und Kulinarik – mit fachkundiger Begleitung"
+          },
+          {
+            "icon": "camera",
+            "title": "Fotografie",
+            "text": "Kurse, Workshops und Fotoshootings"
+          }
+        ]
+      }
+    ]
+  },
+  "location": {
+    "kicker": "Hier finden Sie uns",
+    "title": "Im Herzen des Chianti Classico",
+    "text": "Unser Zuhause liegt in Barberino Tavarnelle, in der Stille von Sambuca Val di Pesa: fernab von Trubel und Verkehr und doch ganz nah an allen Annehmlichkeiten.",
+    "facts": [
+      {
+        "value": "25 km",
+        "label": "von Florenz"
+      },
+      {
+        "value": "25 km",
+        "label": "von Siena"
+      },
+      {
+        "value": "450 m",
+        "label": "über dem Meer"
+      },
+      {
+        "value": "500 m",
+        "label": "zu den Pools"
+      }
+    ],
+    "travel": [
+      {
+        "icon": "car",
+        "text": "Mit dem Auto: Schnellstraße Florenz–Siena, Ausfahrt Tavarnelle"
+      },
+      {
+        "icon": "plane",
+        "text": "Mit dem Flugzeug: Flughäfen Florenz und Pisa"
+      },
+      {
+        "icon": "train",
+        "text": "Mit der Bahn: Bahnhöfe Florenz Santa Maria Novella und Siena"
+      }
+    ],
+    "address_note": "Die genaue Adresse erhalten Sie mit Ihrer Buchung.",
+    "map_cta": "In Google Maps öffnen",
+    "map_alt": "Illustrierte Karte des Chianti zwischen Florenz und Siena mit der Lage von A spasso con Daisy in Sambuca Val di Pesa"
+  },
+  "booking": {
+    "kicker": "Buchung",
+    "title": "Verfügbarkeit prüfen",
+    "intro": "Unser Online-Kalender folgt in Kürze. Senden Sie uns bis dahin gern Ihre Anfrage – wir antworten Ihnen so schnell wie möglich.",
+    "form": {
+      "checkin": "Anreise",
+      "checkout": "Abreise",
+      "guests": "Gäste",
+      "apartment": "Wohnung",
+      "apartment_options": [
+        "Keine Präferenz",
+        "Il Bilocale",
+        "Il Monolocale"
+      ],
+      "stay": "Art des Aufenthalts",
+      "stay_options": [
+        "Urlaub",
+        "Smartworking: Fünf-Tage-Woche",
+        "Smartworking: tageweise"
+      ],
+      "dog": "Ich reise mit meinem Hund",
+      "dog_details": "Name und Größe des Hundes",
+      "dog_placeholder": "z. B. Daisy, 7 kg",
+      "name": "Vor- und Nachname",
+      "message": "Nachricht",
+      "message_placeholder": "Erlebnisse, die Sie interessieren, Ankunftszeit, besondere Wünsche …",
+      "send_whatsapp": "Per WhatsApp senden",
+      "send_email": "Per E-Mail senden",
+      "privacy": "Diese Website speichert keinerlei Daten: Die Nachricht öffnet sich bereits ausgefüllt in Ihrer WhatsApp- oder E-Mail-App.",
+      "error_dates": "Das Abreisedatum muss nach dem Anreisedatum liegen.",
+      "msg_greeting": "Guten Tag! Ich möchte gern die Verfügbarkeit für A spasso con Daisy · Chianti Home anfragen.",
+      "msg_yes": "Ja",
+      "msg_no": "Nein",
+      "msg_subject": "Anfrage zur Verfügbarkeit"
+    },
+    "calendar_title": "Kalender und Verfügbarkeit",
+    "calendar_text": "Schon bald sehen Sie hier die freien Termine und können auch über Airbnb buchen.",
+    "calendar_badge": "In Kürze",
+    "contacts_title": "Kontakt",
+    "cancellation": {
+      "title": "Stornierungsbedingungen",
+      "items": [
+        "15 bis 9 Tage vor Anreise: Stornogebühr von 30 %",
+        "8 Tage bis 72 Stunden vor Anreise: Stornogebühr von 50 %",
+        "Innerhalb von 72 Stunden vor Anreise: Stornogebühr von 100 %"
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Abbi cura di splendere",
+    "rights": "Alle Rechte vorbehalten.",
+    "photos_credit": "Fotos der Region von Unsplash",
+    "illustrations_credit": "Originalillustrationen"
+  }
+}

@@ -1,0 +1,500 @@
+{#- Template unico per tutte le lingue. Non modificare index.html a mano: modifica qui e lancia build.py -#}
+{% macro icon(name, cls='') -%}
+<svg class="icon {{ cls }}" aria-hidden="true" focusable="false"><use href="#i-{{ name }}"></use></svg>
+{%- endmacro %}
+{% macro photo(slug, sizes='100vw', cls='', square=False, eager=False, ph_icon='hills') -%}
+{% set p = photos.get(slug) %}
+{% if p %}
+{% if square and p.has_sq %}
+<img class="{{ cls }}" src="{{ root }}assets/img/photos/{{ slug }}-sq-800.webp" width="800" height="800" alt="{{ p['alt_' ~ lang.code] }}" loading="{{ 'eager' if eager else 'lazy' }}" decoding="async" style="background-color:{{ p.dominant }}">
+{% else %}
+<img class="{{ cls }}" src="{{ root }}assets/img/photos/{{ slug }}-1024.webp" srcset="{{ root }}assets/img/photos/{{ slug }}-640.webp 640w, {{ root }}assets/img/photos/{{ slug }}-1024.webp 1024w, {{ root }}assets/img/photos/{{ slug }}-1600.webp 1600w" sizes="{{ sizes }}" width="{{ p.width_1600 }}" height="{{ p.height_1600 }}" alt="{{ p['alt_' ~ lang.code] }}" loading="{{ 'eager' if eager else 'lazy' }}" decoding="async" style="background-color:{{ p.dominant }}">
+{% endif %}
+{% else %}
+<div class="{{ cls }} ph" aria-hidden="true">{{ icon(ph_icon) }}</div>
+{% endif %}
+{%- endmacro %}
+{% macro edge() -%}
+<svg class="edge" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 90V62c90-14 170-26 260-24 30 1 44-2 52-10 3-14 5-26 7-30 2 4 4 16 6 30 8 6 22 8 44 10 110 10 190 22 300 6 70-10 120-24 180-26 3-16 5-28 7-33 2 5 4 17 6 33 4-1 7-1 10-1 2-12 4-21 6-25 2 4 4 13 5 25 60 2 110 14 180 22 110 12 200 6 270-6 40-7 70-12 106-14V90z"/></svg>
+{%- endmacro %}
+<!doctype html>
+<html lang="{{ lang.code }}" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ t.meta.title }}</title>
+<meta name="description" content="{{ t.meta.description }}">
+{% if site.noindex %}
+<meta name="robots" content="noindex, nofollow">
+{% endif %}
+<meta name="theme-color" content="#0b0b0a">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="{{ site.base_url }}{{ lang.path }}">
+{% for l in site.languages %}
+<link rel="alternate" hreflang="{{ l.code }}" href="{{ site.base_url }}{{ l.path }}">
+{% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.base_url }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ t.meta.title }}">
+<meta property="og:description" content="{{ t.meta.description }}">
+<meta property="og:url" content="{{ site.base_url }}{{ lang.path }}">
+<meta property="og:locale" content="{{ t.locale }}">
+<meta property="og:image" content="{{ site.base_url }}assets/img/brand/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ t.meta.og_image_alt }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ root }}assets/img/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="{{ root }}assets/img/brand/favicon-48.png">
+<link rel="apple-touch-icon" href="{{ root }}assets/img/brand/apple-touch-icon.png">
+<link rel="manifest" href="{{ root }}site.webmanifest">
+<link rel="preload" href="{{ root }}assets/fonts/cormorant-garamond.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ root }}assets/fonts/jost.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ root }}assets/img/brand/logo-light.webp" as="image" type="image/webp" fetchpriority="high">
+<link rel="stylesheet" href="{{ root }}assets/css/style.css">
+<script>document.documentElement.classList.replace('no-js','js')</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "A spasso con Daisy · Chianti Home",
+  "description": {{ t.meta.description | tojson }},
+  "url": "{{ site.base_url }}{{ lang.path }}",
+  "email": "{{ site.email }}",
+  "image": "{{ site.base_url }}assets/img/brand/og-image.jpg",
+  "petsAllowed": true,
+  "address": { "@type": "PostalAddress", "addressLocality": "Barberino Tavarnelle", "addressRegion": "FI", "addressCountry": "IT" }
+}
+</script>
+</head>
+<body>
+<!--ICON_SPRITE-->
+<a class="skip" href="#main">{{ t.ui.skip }}</a>
+
+<header class="site-header" id="top">
+  <div class="site-header__inner">
+    <a class="brand" href="#top" aria-label="{{ t.hero.logo_alt }}">
+      <img class="brand__mark" src="{{ root }}assets/img/brand/mark-light.webp" width="44" height="44" alt="">
+      <span class="brand__name">A spasso con Daisy</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Menu">
+      <ul class="nav__list">
+        {% for item in t.nav %}
+        <li><a class="nav__link" href="{{ item.href }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+      <div class="nav__extra">
+        <ul class="langs" aria-label="{{ t.ui.lang_label }}">
+          {% for l in site.languages %}
+          <li><a href="{{ root }}{{ l.path }}" hreflang="{{ l.code }}" lang="{{ l.code }}"{% if l.code == lang.code %} aria-current="true"{% endif %}>{{ l.label }}</a></li>
+          {% endfor %}
+        </ul>
+        <a class="btn btn--gold btn--sm" href="#booking">{{ t.nav_cta }}</a>
+      </div>
+    </nav>
+    <button class="menu-toggle" type="button" aria-controls="nav" aria-expanded="false" data-open="{{ t.ui.menu_open }}" data-close="{{ t.ui.menu_close }}">
+      <span class="sr-only">{{ t.ui.menu_open }}</span>
+      <span class="menu-toggle__bars" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  {# ───────────────────────── HERO ───────────────────────── #}
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__sky" aria-hidden="true">
+      <span class="firefly"></span><span class="firefly"></span><span class="firefly"></span><span class="firefly"></span>
+      <span class="firefly"></span><span class="firefly"></span><span class="firefly"></span><span class="firefly"></span>
+    </div>
+    <div class="hero__content">
+      <p class="kicker kicker--gold hero__kicker">{{ t.hero.kicker }}</p>
+      <h1 class="hero__title" id="hero-title">
+        <img class="hero__logo" src="{{ root }}assets/img/brand/logo-light.webp" width="989" height="459" alt="{{ t.hero.logo_alt }}" fetchpriority="high">
+      </h1>
+      <p class="hero__tagline">{{ t.hero.tagline }}</p>
+      <ul class="hero__facts">
+        {% for f in t.hero.facts %}
+        <li>{{ icon(f.icon) }}<span>{{ f.text }}</span></li>
+        {% endfor %}
+      </ul>
+      <div class="hero__ctas">
+        <a class="btn btn--gold" href="#booking">{{ icon('calendar') }}<span>{{ t.hero.cta_primary }}</span></a>
+        <a class="btn btn--ghost" href="#welcome">{{ t.hero.cta_secondary }}</a>
+      </div>
+    </div>
+    <div class="hero__hills" role="img" aria-label="{{ t.hero.illustration_alt }}">{{ svg_inline('hero-hills.svg') }}</div>
+  </section>
+
+  {# ───────────────────────── BENVENUTI ───────────────────────── #}
+  <section class="section section--light welcome" id="welcome" aria-labelledby="welcome-title">
+    <div class="container">
+      <div class="welcome__grid">
+        <div class="welcome__poem reveal">
+          <p class="script welcome__script">{{ t.welcome.kicker }}</p>
+          <blockquote class="poem">
+            {% for line in t.welcome.poem %}
+            <p{% if loop.last %} class="poem__last"{% endif %}>{{ line }}</p>
+            {% endfor %}
+          </blockquote>
+        </div>
+        <div class="welcome__text reveal">
+          <h2 class="h2" id="welcome-title">{{ t.welcome.title }}</h2>
+          {% for p in t.welcome.paragraphs %}
+          <p class="lead">{{ p }}</p>
+          {% endfor %}
+        </div>
+      </div>
+      <svg class="ornament" aria-hidden="true" focusable="false"><use href="#i-ornament"></use></svg>
+      <ul class="highlights">
+        {% for h in t.welcome.highlights %}
+        <li class="highlight reveal">
+          <span class="highlight__icon">{{ icon(h.icon) }}</span>
+          <h3 class="h4">{{ h.title }}</h3>
+          <p>{{ h.text }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  {# ───────────────────────── APPARTAMENTI ───────────────────────── #}
+  <section class="section section--ivory apartments" id="apartments" aria-labelledby="apartments-title">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="kicker">{{ t.apartments.kicker }}</p>
+        <h2 class="h2" id="apartments-title">{{ t.apartments.title }}</h2>
+        <p class="lead">{{ t.apartments.intro }}</p>
+      </header>
+      <div class="units">
+        {% for u in t.apartments.units %}
+        <article class="unit reveal" id="{{ u.id }}">
+          <figure class="unit__figure">
+            <img src="{{ root }}assets/img/illustrations/{{ u.illustration }}" width="800" height="600" alt="{{ u.illustration_alt }}" loading="lazy" decoding="async">
+            <figcaption class="badge badge--dark">{{ icon('camera') }}{{ t.ui.photo_soon }}</figcaption>
+          </figure>
+          <div class="unit__body">
+            <h3 class="unit__name">{{ u.name }}</h3>
+            <p class="unit__tagline">{{ u.tagline }}</p>
+            <p>{{ u.text }}</p>
+            <ul class="chips">
+              {% for f in u.facts %}
+              <li class="chip">{{ icon(f.icon) }}<span>{{ f.text }}</span></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {# ───────────────────────── CANI ───────────────────────── #}
+  <section class="section section--night dogs" id="dogs" aria-labelledby="dogs-title">
+    {{ edge() }}
+    <div class="container dogs__grid">
+      <div class="dogs__art reveal">
+        <img class="dogs__illustration" src="{{ root }}assets/img/illustrations/daisy-path.svg" width="800" height="520" alt="{{ t.dogs.illustration_alt }}" loading="lazy" decoding="async">
+        {% if photos.get('dog') %}
+        <div class="dogs__photo">{{ photo('dog', '(min-width: 900px) 220px, 40vw', square=True) }}</div>
+        {% endif %}
+      </div>
+      <div class="dogs__text reveal">
+        <p class="kicker kicker--gold">{{ t.dogs.kicker }}</p>
+        <h2 class="h2" id="dogs-title">{{ t.dogs.title }}</h2>
+        <p class="lead">{{ t.dogs.text }}</p>
+        <ul class="ticks">
+          {% for i in t.dogs['items'] %}
+          <li>{{ icon(i.icon) }}<span>{{ i.text }}</span></li>
+          {% endfor %}
+        </ul>
+        <p class="note">{{ icon('paw') }}<span>{{ t.dogs.note }}</span></p>
+      </div>
+    </div>
+  </section>
+
+  {# ───────────────────────── TERRITORIO ───────────────────────── #}
+  <section class="section section--light territory" id="territory" aria-labelledby="territory-title">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="kicker">{{ t.territory.kicker }}</p>
+        <h2 class="h2" id="territory-title">{{ t.territory.title }}</h2>
+        <p class="lead">{{ t.territory.intro }}</p>
+      </header>
+      <div class="mosaic reveal">
+        <div class="mosaic__item mosaic__item--main">{{ photo('hills', '(min-width: 900px) 66vw, 100vw', ph_icon='hills') }}</div>
+        <div class="mosaic__item">{{ photo('cypress-road', '(min-width: 900px) 33vw, 50vw', ph_icon='cypress') }}</div>
+        <div class="mosaic__item">{{ photo('borgo', '(min-width: 900px) 33vw, 50vw', ph_icon='castle') }}</div>
+      </div>
+      <ul class="places">
+        {% for pl in t.territory.places %}
+        <li class="place reveal">
+          <span class="place__icon">{{ icon(pl.icon) }}</span>
+          <h3 class="h4">{{ pl.title }}</h3>
+          <p>{{ pl.text }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      <figure class="quote reveal">
+        <blockquote><p>{{ t.territory.quote }}</p></blockquote>
+        <figcaption class="script">{{ t.territory.signature }} <span class="sun" aria-hidden="true">{{ icon('sun') }}</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  {# ───────────────────────── AL VOSTRO SERVIZIO ───────────────────────── #}
+  <section class="section section--night services" id="services" aria-labelledby="services-title">
+    {{ edge() }}
+    <div class="container">
+      <header class="section-head section-head--center reveal">
+        <p class="kicker kicker--gold">{{ t.services.kicker }}</p>
+        <h2 class="h2" id="services-title">{{ t.services.title }}</h2>
+        <p class="lead">{{ t.services.intro }}</p>
+      </header>
+      <div class="stories">
+        {% for b in t.services.blocks %}
+        <article class="story reveal">
+          <div class="story__media">
+            {% if b.photo and photos.get(b.photo) %}
+            {{ photo(b.photo, '(min-width: 900px) 50vw, 100vw') }}
+            {% else %}
+            <div class="story__frame" aria-hidden="true"><span>{{ icon(b.icon) }}</span></div>
+            {% endif %}
+          </div>
+          <div class="story__body">
+            <span class="story__num" aria-hidden="true">{{ '%02d' % loop.index }}</span>
+            <h3 class="h3">{{ b.title }}</h3>
+            <p>{{ b.text }}</p>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {# ───────────────────────── INCLUSO ───────────────────────── #}
+  <section class="section section--light included" id="included" aria-labelledby="included-title">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="kicker">{{ t.included.kicker }}</p>
+        <h2 class="h2" id="included-title">{{ t.included.title }}</h2>
+        <p class="lead">{{ t.included.intro }}</p>
+      </header>
+      <ul class="amenities">
+        {% for i in t.included['items'] %}
+        <li class="amenity reveal">{{ icon(i.icon) }}<span>{{ i.text }}</span></li>
+        {% endfor %}
+      </ul>
+      <ul class="extras reveal">
+        {% for e in t.included.extras %}
+        <li>{{ icon(e.icon) }}<span>{{ e.text }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  {# ───────────────────────── SMARTWORKING ───────────────────────── #}
+  <section class="section section--ivory smart" id="smartworking" aria-labelledby="smart-title">
+    <div class="container smart__grid">
+      <div class="smart__intro reveal">
+        <p class="kicker">{{ t.smartworking.kicker }}</p>
+        <h2 class="h2" id="smart-title">{{ t.smartworking.title }}</h2>
+        <p class="lead">{{ t.smartworking.intro }}</p>
+        <div class="formulas">
+          {% for f in t.smartworking.formulas %}
+          <div class="formula">
+            {{ icon(f.icon) }}
+            <h3 class="h4">{{ f.title }}</h3>
+            <p>{{ f.text }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="smart__card reveal">
+        <span class="smart__badge">{{ icon('laptop') }}</span>
+        <h3 class="h3">{{ t.smartworking.includes_title }}</h3>
+        <ul class="ticks ticks--light">
+          {% for i in t.smartworking['items'] %}
+          <li>{{ icon(i.icon) }}<span>{{ i.text }}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {# ───────────────────────── ESPERIENZE ───────────────────────── #}
+  <section class="section section--night experiences" id="experiences" aria-labelledby="experiences-title">
+    {{ edge() }}
+    <div class="container">
+      <header class="section-head section-head--center reveal">
+        <p class="kicker kicker--gold">{{ t.experiences.kicker }}</p>
+        <h2 class="h2" id="experiences-title">{{ t.experiences.title }}</h2>
+        <p class="badge badge--gold">{{ icon('calendar') }}{{ t.experiences.badge }}</p>
+        <p class="lead">{{ t.experiences.intro }}</p>
+      </header>
+      {% set strip = [] %}
+      {% for s in ['wine', 'oil', 'bike', 'pool'] %}{% if photos.get(s) and strip|length < 3 %}{% set _ = strip.append(s) %}{% endif %}{% endfor %}
+      {% if strip %}
+      <div class="strip reveal">
+        {% for s in strip %}
+        <div class="strip__item">{{ photo(s, '(min-width: 900px) 33vw, 80vw') }}</div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <div class="groups">
+        {% for g in t.experiences.groups %}
+        <section class="group reveal" aria-labelledby="group-{{ loop.index }}">
+          <h3 class="group__title" id="group-{{ loop.index }}">{{ g.title }}</h3>
+          <ul class="group__list">
+            {% for i in g['items'] %}
+            <li class="exp">
+              {{ icon(i.icon) }}
+              <div>
+                <h4 class="exp__title">{{ i.title }}</h4>
+                <p>{{ i.text }}</p>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {# ───────────────────────── DOVE SIAMO ───────────────────────── #}
+  <section class="section section--light location" id="location" aria-labelledby="location-title">
+    <div class="container location__grid">
+      <figure class="location__map reveal">
+        <img src="{{ root }}assets/img/illustrations/map-chianti.svg" width="600" height="720" alt="{{ t.location.map_alt }}" loading="lazy" decoding="async">
+      </figure>
+      <div class="location__text reveal">
+        <p class="kicker">{{ t.location.kicker }}</p>
+        <h2 class="h2" id="location-title">{{ t.location.title }}</h2>
+        <p class="lead">{{ t.location.text }}</p>
+        <dl class="facts">
+          {% for f in t.location.facts %}
+          <div><dt>{{ f.value }}</dt><dd>{{ f.label }}</dd></div>
+          {% endfor %}
+        </dl>
+        <ul class="ticks ticks--light">
+          {% for tr in t.location.travel %}
+          <li>{{ icon(tr.icon) }}<span>{{ tr.text }}</span></li>
+          {% endfor %}
+        </ul>
+        <p class="small">{{ t.location.address_note }}</p>
+        <a class="btn btn--dark" href="{{ site.maps_url }}" target="_blank" rel="noopener">{{ icon('pin') }}<span>{{ t.location.map_cta }}</span><span class="sr-only"> {{ t.ui.new_tab }}</span></a>
+      </div>
+    </div>
+  </section>
+
+  {# ───────────────────────── PRENOTA ───────────────────────── #}
+  <section class="section section--night booking" id="booking" aria-labelledby="booking-title">
+    {{ edge() }}
+    <div class="container">
+      <header class="section-head section-head--center reveal">
+        <p class="kicker kicker--gold">{{ t.booking.kicker }}</p>
+        <h2 class="h2" id="booking-title">{{ t.booking.title }}</h2>
+        <p class="lead">{{ t.booking.intro }}</p>
+      </header>
+      <div class="booking__grid">
+        {% set f = t.booking.form %}
+        <form class="form reveal" id="booking-form" novalidate data-email="{{ site.email }}" data-whatsapp="{{ site.whatsapp }}">
+          <div class="form__row">
+            <label class="field"><span>{{ f.checkin }}</span><input type="date" name="checkin" required></label>
+            <label class="field"><span>{{ f.checkout }}</span><input type="date" name="checkout" required></label>
+          </div>
+          <p class="form__error" id="date-error" role="alert" hidden>{{ f.error_dates }}</p>
+          <div class="form__row">
+            <label class="field"><span>{{ f.guests }}</span>
+              <select name="guests">{% for n in range(1, 5) %}<option{% if n == 2 %} selected{% endif %}>{{ n }}</option>{% endfor %}</select>
+            </label>
+            <label class="field"><span>{{ f.apartment }}</span>
+              <select name="apartment">{% for o in f.apartment_options %}<option>{{ o }}</option>{% endfor %}</select>
+            </label>
+          </div>
+          <label class="field"><span>{{ f.stay }}</span>
+            <select name="stay">{% for o in f.stay_options %}<option>{{ o }}</option>{% endfor %}</select>
+          </label>
+          <label class="check"><input type="checkbox" name="dog" id="dog-check"><span class="check__box" aria-hidden="true">{{ icon('check') }}</span><span>{{ icon('paw') }} {{ f.dog }}</span></label>
+          <label class="field field--dog" id="dog-field" hidden><span>{{ f.dog_details }}</span><input type="text" name="dog_details" placeholder="{{ f.dog_placeholder }}" autocomplete="off"></label>
+          <label class="field"><span>{{ f.name }}</span><input type="text" name="name" autocomplete="name"></label>
+          <label class="field"><span>{{ f.message }}</span><textarea name="message" rows="3" placeholder="{{ f.message_placeholder }}"></textarea></label>
+          <div class="form__actions">
+            <button class="btn btn--gold" type="submit" name="via" value="whatsapp">{{ icon('whatsapp') }}<span>{{ f.send_whatsapp }}</span></button>
+            <button class="btn btn--ghost" type="submit" name="via" value="email">{{ icon('mail') }}<span>{{ f.send_email }}</span></button>
+          </div>
+          <p class="small form__privacy">{{ f.privacy }}</p>
+          <script type="application/json" id="form-i18n">{{ {
+            'greeting': f.msg_greeting, 'subject': f.msg_subject, 'yes': f.msg_yes, 'no': f.msg_no,
+            'checkin': f.checkin, 'checkout': f.checkout, 'guests': f.guests, 'apartment': f.apartment,
+            'stay': f.stay, 'dog': f.dog, 'dog_details': f.dog_details, 'name': f.name, 'message': f.message,
+            'locale': t.locale
+          } | tojson }}</script>
+        </form>
+        <aside class="booking__aside">
+          <div class="card card--night reveal">
+            <div class="card__head">{{ icon('calendar') }}<h3 class="h4">{{ t.booking.calendar_title }}</h3><span class="badge badge--gold">{{ t.booking.calendar_badge }}</span></div>
+            <p>{{ t.booking.calendar_text }}</p>
+            <div class="cal" aria-hidden="true">
+              {% for d in range(1, 29) %}<span{% if d in [6,7,8,13,19,20,21,22] %} class="is-off"{% endif %}>{{ d }}</span>{% endfor %}
+            </div>
+          </div>
+          <div class="card card--night reveal">
+            <div class="card__head">{{ icon('mail') }}<h3 class="h4">{{ t.booking.contacts_title }}</h3></div>
+            <ul class="contacts">
+              <li><a href="mailto:{{ site.email }}">{{ icon('mail') }}<span>{{ site.email }}</span></a></li>
+              {% if site.phone %}<li><a href="tel:{{ site.phone | replace(' ', '') }}">{{ icon('phone') }}<span>{{ site.phone }}</span></a></li>{% endif %}
+              {% if site.instagram %}<li><a href="https://instagram.com/{{ site.instagram }}" target="_blank" rel="noopener">{{ icon('instagram') }}<span>@{{ site.instagram }}</span></a></li>{% endif %}
+            </ul>
+          </div>
+          <div class="card card--night reveal">
+            <div class="card__head">{{ icon('info') }}<h3 class="h4">{{ t.booking.cancellation.title }}</h3><span class="badge badge--outline">{{ t.ui.draft }}</span></div>
+            <ul class="policy">
+              {% for c in t.booking.cancellation['items'] %}
+              <li>{{ c }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <img class="site-footer__logo" src="{{ root }}assets/img/brand/logo-light.webp" width="989" height="459" alt="A spasso con Daisy — Chianti Home" loading="lazy" decoding="async">
+    <p class="script site-footer__tagline">{{ t.footer.tagline }} <span class="sun" aria-hidden="true">{{ icon('sun') }}</span></p>
+    <nav aria-label="Footer">
+      <ul class="site-footer__nav">
+        {% for item in t.nav %}<li><a href="{{ item.href }}">{{ item.label }}</a></li>{% endfor %}
+      </ul>
+    </nav>
+    <ul class="langs langs--footer" aria-label="{{ t.ui.lang_label }}">
+      {% for l in site.languages %}
+      <li><a href="{{ root }}{{ l.path }}" hreflang="{{ l.code }}" lang="{{ l.code }}"{% if l.code == lang.code %} aria-current="true"{% endif %}>{{ l.label }}</a></li>
+      {% endfor %}
+    </ul>
+    <p class="site-footer__contact"><a href="mailto:{{ site.email }}">{{ site.email }}</a> · Barberino Tavarnelle (FI) · Toscana</p>
+    <div class="site-footer__meta">
+      <p>© {{ site.year }} A spasso con Daisy · Chianti Home. {{ t.footer.rights }}</p>
+      <p>
+        {{ t.footer.illustrations_credit }}.
+        {% set credited = photos.values() | list %}
+        {% if credited %}
+        {{ t.footer.photos_credit }}:
+        {% for p in credited %}<a href="{{ p.unsplash_page_url }}" target="_blank" rel="noopener">{{ p.photographer }}</a>{{ ', ' if not loop.last else '.' }}{% endfor %}
+        {% endif %}
+      </p>
+      <p class="site-footer__preview">{{ t.ui.preview_note }}</p>
+      <a class="site-footer__top" href="#top">{{ icon('arrow-down', 'icon--up') }}<span>{{ t.ui.back_top }}</span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ root }}assets/js/main.js" defer></script>
+</body>
+</html>
