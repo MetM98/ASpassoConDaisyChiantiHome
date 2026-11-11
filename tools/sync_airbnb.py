@@ -191,6 +191,10 @@ def parse_duration(value):
     return -delta if match.group(1) == "-" else delta
 
 
+class NotICalendar(ValueError):
+    """La risposta non è un calendario iCal (es. pagina HTML di errore)."""
+
+
 @dataclass
 class ParseResult:
     ranges: list = field(default_factory=list)  # [(date, date)] semiaperti
@@ -206,11 +210,11 @@ def parse_ical(text):
     """Estrae gli intervalli occupati da un calendario iCal.
 
     Si tengono solo DTSTART/DTEND/DURATION/STATUS: SUMMARY, DESCRIPTION, UID ecc.
-    non vengono nemmeno letti. Solleva ValueError se il testo non è un iCalendar.
+    non vengono nemmeno letti. Solleva NotICalendar se il testo non è un iCalendar.
     """
     lines = unfold(text)
     if not any(line.strip().upper() == "BEGIN:VCALENDAR" for line in lines):
-        raise ValueError("response is not an iCalendar document")
+        raise NotICalendar("response is not an iCalendar document")
 
     result = ParseResult()
     stack, props, raw_events = [], None, []
@@ -385,10 +389,13 @@ def fetch_ical(url, timeout=TIMEOUT, attempts=ATTEMPTS, backoff=BACKOFF,
         url = "https://" + url[len("webcal://"):]
     if urllib.parse.urlsplit(url).scheme.lower() not in ("http", "https"):
         raise FetchError("unsupported URL scheme")
-    request = urllib.request.Request(url, headers={
-        "User-Agent": USER_AGENT,
-        "Accept": "text/calendar, text/plain;q=0.9, */*;q=0.5",
-    })
+    try:
+        request = urllib.request.Request(url, headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "text/calendar, text/plain;q=0.9, */*;q=0.5",
+        })
+    except ValueError:
+        raise FetchError("invalid URL") from None
     reason = "no attempt"
     for attempt in range(1, attempts + 1):
         try:
@@ -448,13 +455,11 @@ def sync(units, environ, previous, fetch, now):
         for index, url in enumerate(urls, 1):
             try:
                 result = parse_ical(fetch(url))
-            except (FetchError, ValueError) as exc:
+            except Exception as exc:  # qualunque errore: si tengono i dati precedenti
                 failed += 1
-                _warn(f"{unit}: source {index}/{len(urls)} failed: {exc}")
-                continue
-            except Exception as exc:  # qualunque imprevisto: si tengono i dati precedenti
-                failed += 1
-                _warn(f"{unit}: source {index}/{len(urls)} failed: {type(exc).__name__}")
+                # solo i nostri messaggi, che non contengono mai l'URL
+                detail = exc if isinstance(exc, (FetchError, NotICalendar)) else type(exc).__name__
+                _warn(f"{unit}: source {index}/{len(urls)} failed: {detail}")
                 continue
             ok += 1
             ranges += result.ranges

@@ -1,0 +1,92 @@
+# Genera il sito, sincronizza i calendari Airbnb e pubblica su GitHub Pages.
+#
+# Gli URL iCal privati sono nei secret del repository (Settings -> Secrets and
+# variables -> Actions) e non vengono mai pubblicati: nel sito finisce solo
+# assets/data/availability.json, con le sole date occupate.
+# Requisito: Settings -> Pages -> Source = "GitHub Actions".
+name: Build and deploy site
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # ogni 3 ore (orario UTC), a un minuto "dispari" per evitare i picchi delle :00
+    - cron: "23 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install jinja2
+
+      - name: Test calendar sync
+        run: python -B -m unittest discover -s tools
+
+      - name: Build pages
+        run: python build.py
+
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      # Se Airbnb non risponde, lo script tiene le date già pubblicate
+      # invece di svuotare il calendario.
+      - name: Download currently published availability
+        env:
+          BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: |
+          if curl -fsSL --max-time 20 --retry 2 \
+               -o "$RUNNER_TEMP/previous-availability.json" \
+               "${BASE_URL%/}/assets/data/availability.json?run=${GITHUB_RUN_ID}"; then
+            echo "Previously published availability downloaded."
+          else
+            echo "No published availability yet (first deploy?)."
+            rm -f "$RUNNER_TEMP/previous-availability.json"
+          fi
+
+      - name: Sync Airbnb calendars
+        env:
+          AIRBNB_ICAL_BILOCALE: ${{ secrets.AIRBNB_ICAL_BILOCALE }}
+          AIRBNB_ICAL_BILOCALE_EXTRA: ${{ secrets.AIRBNB_ICAL_BILOCALE_EXTRA }}
+          AIRBNB_ICAL_MONOLOCALE: ${{ secrets.AIRBNB_ICAL_MONOLOCALE }}
+          AIRBNB_ICAL_MONOLOCALE_EXTRA: ${{ secrets.AIRBNB_ICAL_MONOLOCALE_EXTRA }}
+        run: python -B tools/sync_airbnb.py --previous "$RUNNER_TEMP/previous-availability.json"
+
+      - name: Remove files that must not be published
+        run: rm -rf .git .github src tools build.py README.md
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
