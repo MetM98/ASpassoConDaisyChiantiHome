@@ -6,6 +6,14 @@
   "instagram": "",
   "base_url": "https://metm98.github.io/ASpassoConDaisyChiantiHome/",
   "maps_url": "https://www.google.com/maps/search/?api=1&query=Sambuca+Val+di+Pesa+Barberino+Tavarnelle",
+  "horses_of_florence": {
+    "url": "https://metm98.github.io/HorsesOfFlorence/",
+    "paths": {
+      "it": "",
+      "en": "en/",
+      "de": "en/"
+    }
+  },
   "noindex": true,
   "year": 2026,
   "languages": [
