@@ -114,6 +114,11 @@
     "kicker": "Die Räume",
     "title": "Zwei Wohnungen, eine Atmosphäre",
     "intro": "Behagliche, lichtdurchflutete Räume im klassischen Stil, in denen Gemälde, Skulpturen, Keramiken und Fotografien von der Toskana erzählen – in wechselnden Arrangements, die sich mit jeder Saison wandeln.",
+    "building": {
+      "image": "palazzina",
+      "alt": "Aquarell-Illustration des gelben Hauses von A spasso con Daisy mit dem Park, der hölzernen Pergola und Daisy auf der blühenden Wiese",
+      "caption": "Unser Haus und der Park direkt davor – mit Daisy auf Wache."
+    },
     "units": [
       {
         "id": "bilocale",

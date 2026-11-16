@@ -82,11 +82,18 @@
   {# ───────────────────────── APPARTAMENTI ───────────────────────── #}
   <section class="section section--ivory apartments" id="apartments" aria-labelledby="apartments-title">
     <div class="container">
-      <header class="section-head reveal">
-        <p class="kicker">{{ t.apartments.kicker }}</p>
-        <h2 class="h2" id="apartments-title">{{ t.apartments.title }}</h2>
-        <p class="lead">{{ t.apartments.intro }}</p>
-      </header>
+      {% set bld = t.apartments.building %}
+      <div class="apartments__intro">
+        <header class="section-head reveal">
+          <p class="kicker">{{ t.apartments.kicker }}</p>
+          <h2 class="h2" id="apartments-title">{{ t.apartments.title }}</h2>
+          <p class="lead">{{ t.apartments.intro }}</p>
+        </header>
+        <figure class="building reveal">
+          <img src="{{ root }}assets/img/illustrations/{{ bld.image }}-1000.webp" srcset="{{ root }}assets/img/illustrations/{{ bld.image }}-640.webp 640w, {{ root }}assets/img/illustrations/{{ bld.image }}-1000.webp 1014w" sizes="(min-width: 960px) 50vw, 100vw" width="1014" height="596" alt="{{ bld.alt }}" loading="lazy" decoding="async">
+          <figcaption>{{ bld.caption }}</figcaption>
+        </figure>
+      </div>
       <div class="units">
         {% for u in t.apartments.units %}
         <article class="unit reveal" id="{{ u.id }}">

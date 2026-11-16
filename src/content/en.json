@@ -114,6 +114,11 @@
     "kicker": "The spaces",
     "title": "Two apartments, one spirit",
     "intro": "Intimate, light-filled rooms furnished in classic style, where paintings, sculpture, ceramics and photographs tell the story of Tuscany in displays that change with every season.",
+    "building": {
+      "image": "palazzina",
+      "alt": "Watercolour illustration of the yellow apartment building of A spasso con Daisy, with the park, the wooden pergola and Daisy on the flowering lawn",
+      "caption": "Our building and the park right below it, with Daisy on watch."
+    },
     "units": [
       {
         "id": "bilocale",

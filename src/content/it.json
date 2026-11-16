@@ -114,6 +114,11 @@
     "kicker": "Gli spazi",
     "title": "Due appartamenti, un’unica atmosfera",
     "intro": "Ambienti raccolti e luminosi, arredati in stile classico, dove dipinti, sculture, ceramiche e fotografie raccontano la Toscana con allestimenti che cambiano a ogni stagione.",
+    "building": {
+      "image": "palazzina",
+      "alt": "Illustrazione ad acquerello della palazzina gialla di A spasso con Daisy, con il parco, il pergolato in legno e Daisy sul prato fiorito",
+      "caption": "La nostra palazzina e il parco sotto casa, con Daisy di guardia."
+    },
     "units": [
       {
         "id": "bilocale",

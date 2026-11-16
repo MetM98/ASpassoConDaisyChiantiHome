@@ -358,6 +358,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
 @media (min-width: 900px) { .welcome__grid { grid-template-columns: 1.05fr 1fr; } }
 
 /* ---------- Appartamenti ---------- */
+.apartments__intro { display: grid; gap: clamp(20px, 3vw, 48px); align-items: center; margin-bottom: clamp(40px, 6vw, 72px); }
+.apartments__intro .section-head { margin-bottom: 0; }
+@media (min-width: 960px) { .apartments__intro { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); } }
+.building img { width: 100%; height: auto; }
+.building figcaption {
+  margin-top: .2rem; text-align: center; font-family: var(--serif); font-style: italic;
+  font-size: clamp(1rem, .95rem + .3vw, 1.15rem); color: var(--ink-soft);
+}
 .units { display: grid; gap: clamp(28px, 4vw, 48px); }
 @media (min-width: 900px) { .units { grid-template-columns: 1fr 1fr; } }
 .unit {
