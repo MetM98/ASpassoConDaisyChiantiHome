@@ -474,6 +474,15 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .story__frame .icon { width: 64px; height: 64px; }
 .story__num { font-variant-numeric: lining-nums; display: block; font-family: var(--serif); font-size: 1rem; letter-spacing: .2em; color: var(--gold); margin-bottom: .8rem; }
 .story__body p { color: var(--muted-dark); max-width: 52ch; }
+/* Collegamento discreto a Horses of Florence, nello stile dei «kicker» dorati */
+.story__link {
+  display: inline-flex; align-items: center; gap: .7em; margin-top: 1.5rem; padding-bottom: 7px;
+  font-size: .74rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; text-decoration: none; color: var(--gold);
+  background: linear-gradient(currentColor, currentColor) 0 100% / 2.2em 1px no-repeat; transition: background-size .6s var(--ease);
+}
+.story__link:hover, .story__link:focus-visible { background-size: 100% 1px; }
+.story__link .icon { width: 1.05em; height: 1.05em; transition: transform .6s var(--ease); }
+.story__link:hover .icon { transform: translate(2px, -2px); }
 @media (min-width: 900px) {
   .story { grid-template-columns: 1.1fr 1fr; }
   .story:nth-child(even) .story__media { order: 2; }
@@ -620,6 +629,9 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .site-footer__nav a:hover { opacity: 1; color: var(--gold); }
 .langs--footer { color: var(--cream); }
 .site-footer__contact a { color: var(--cream); }
+.site-footer__partner a { display: inline-flex; align-items: center; gap: .6em; padding: 6px 0; font-size: .74rem; letter-spacing: .15em; text-transform: uppercase; text-decoration: none; color: var(--cream); opacity: .8; transition: opacity .3s, color .3s; }
+.site-footer__partner a:hover, .site-footer__partner a:focus-visible { opacity: 1; color: var(--gold); }
+.site-footer__partner .icon { width: 1em; height: 1em; }
 .site-footer__meta { display: grid; gap: 6px; font-size: .8rem; max-width: 760px; margin-top: 10px; padding-top: 24px; border-top: 1px solid rgba(239, 232, 218, .08); }
 .site-footer__meta a { color: var(--cream); }
 .site-footer__preview { color: var(--gold); letter-spacing: .08em; }

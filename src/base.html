@@ -90,6 +90,8 @@
       {% endfor %}
     </ul>
     <p class="site-footer__contact"><a href="mailto:{{ site.email }}">{{ site.email }}</a> · Barberino Tavarnelle (FI) · Toscana</p>
+    {% set hof = site.horses_of_florence %}
+    <p class="site-footer__partner"><a href="{{ hof.url }}{{ hof.paths[lang.code] }}" target="_blank" rel="noopener">Horses of Florence{{ icon('arrow-up-right') }}<span class="sr-only"> {{ t.ui.new_tab }}</span></a></p>
     {% if site.owner.cin or site.owner.vat %}
     <p class="site-footer__ids">
       {% if site.owner.cin %}<span>{{ lg.labels.cin }}: {{ site.owner.cin }}</span>{% endif %}

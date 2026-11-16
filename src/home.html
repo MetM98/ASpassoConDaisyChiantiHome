@@ -191,6 +191,10 @@
             <span class="story__num" aria-hidden="true">{{ '%02d' % loop.index }}</span>
             <h3 class="h3">{{ b.title }}</h3>
             <p>{{ b.text }}</p>
+            {% if b.get('partner') == 'horses_of_florence' %}
+            {% set hof = site.horses_of_florence %}
+            <a class="story__link" href="{{ hof.url }}{{ hof.paths[lang.code] }}" target="_blank" rel="noopener">Horses of Florence{{ icon('arrow-up-right') }}<span class="sr-only"> {{ t.ui.new_tab }}</span></a>
+            {% endif %}
           </div>
         </article>
         {% endfor %}
